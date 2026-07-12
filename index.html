@@ -14,20 +14,28 @@
 
 <style>
   /* ============ TOKENS ============ */
+  /* -------------------------------------------------------------------------
+     BRAND PALETTE (teal). The three accent tokens are named --clay / --blue /
+     --green for historical reasons but hold brand TEAL tones:
+       --clay  = primary teal accent      (from swatch #74C1CA)
+       --blue  = light "mist" tone         (from swatch #C1DEE6) — used for Video
+       --green = deep teal tone            — used for Image
+     Edit the six hex values in EACH theme block below to fine-tune the palette.
+     ------------------------------------------------------------------------- */
   :root {
-    --bg:        #faf9f5;
-    --bg-2:      #f2f0e8;
+    --bg:        #f0f6f8;
+    --bg-2:      #e3eef1;
     --surface:   #ffffff;
-    --ink:       #141413;
-    --ink-2:     #57544c;
-    --ink-3:     #8a867a;
-    --line:      #e4dfd2;
-    --line-2:    #d8d2c2;
-    --clay:      #d97757;
-    --clay-deep: #c0603f;
-    --blue:      #6a9bcc;
-    --green:     #788c5d;
-    --on-accent: #faf9f5;
+    --ink:       #0a1412;
+    --ink-2:     #3d565e;
+    --ink-3:     #6f8f96;
+    --line:      #d3e2e7;
+    --line-2:    #bed5dc;
+    --clay:      #2c7a85;
+    --clay-deep: #205e68;
+    --blue:      #4f9aa6;
+    --green:     #1f6e79;
+    --on-accent: #ffffff;
 
     --sans: "Poppins", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     --serif: "Lora", "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, "Times New Roman", serif;
@@ -44,35 +52,35 @@
 
   @media (prefers-color-scheme: dark) {
     :root {
-      --bg:        #141413;
-      --bg-2:      #1c1a17;
-      --surface:   #221f1a;
-      --ink:       #faf9f5;
-      --ink-2:     #b7b3a8;
-      --ink-3:     #86827a;
-      --line:      #34302a;
-      --line-2:    #423d35;
-      --clay:      #e79075;
-      --clay-deep: #d97757;
-      --blue:      #86b2dd;
-      --green:     #9aae7d;
-      --on-accent: #141413;
+      --bg:        #0a1412;
+      --bg-2:      #0f2830;
+      --surface:   #123039;
+      --ink:       #e7f3f5;
+      --ink-2:     #9dbcc2;
+      --ink-3:     #6e8e95;
+      --line:      #1e3a42;
+      --line-2:    #2a4a53;
+      --clay:      #7ecbd4;
+      --clay-deep: #5aa7b1;
+      --blue:      #b4d8e1;
+      --green:     #4fa7b1;
+      --on-accent: #0a1412;
       --shadow: 0 1px 2px rgba(0,0,0,.3), 0 16px 40px -16px rgba(0,0,0,.6);
       --shadow-lift: 0 2px 6px rgba(0,0,0,.4), 0 32px 70px -22px rgba(0,0,0,.7);
     }
   }
   /* explicit toggle overrides media query in both directions */
   :root[data-theme="light"] {
-    --bg:#faf9f5; --bg-2:#f2f0e8; --surface:#ffffff; --ink:#141413; --ink-2:#57544c;
-    --ink-3:#8a867a; --line:#e4dfd2; --line-2:#d8d2c2; --clay:#d97757; --clay-deep:#c0603f;
-    --blue:#6a9bcc; --green:#788c5d; --on-accent:#faf9f5;
+    --bg:#f0f6f8; --bg-2:#e3eef1; --surface:#ffffff; --ink:#0a1412; --ink-2:#3d565e;
+    --ink-3:#6f8f96; --line:#d3e2e7; --line-2:#bed5dc; --clay:#2c7a85; --clay-deep:#205e68;
+    --blue:#4f9aa6; --green:#1f6e79; --on-accent:#ffffff;
     --shadow: 0 1px 2px rgba(20,20,19,.04), 0 12px 32px -12px rgba(20,20,19,.14);
     --shadow-lift: 0 2px 6px rgba(20,20,19,.06), 0 28px 60px -20px rgba(20,20,19,.24);
   }
   :root[data-theme="dark"] {
-    --bg:#141413; --bg-2:#1c1a17; --surface:#221f1a; --ink:#faf9f5; --ink-2:#b7b3a8;
-    --ink-3:#86827a; --line:#34302a; --line-2:#423d35; --clay:#e79075; --clay-deep:#d97757;
-    --blue:#86b2dd; --green:#9aae7d; --on-accent:#141413;
+    --bg:#0a1412; --bg-2:#0f2830; --surface:#123039; --ink:#e7f3f5; --ink-2:#9dbcc2;
+    --ink-3:#6e8e95; --line:#1e3a42; --line-2:#2a4a53; --clay:#7ecbd4; --clay-deep:#5aa7b1;
+    --blue:#b4d8e1; --green:#4fa7b1; --on-accent:#0a1412;
     --shadow: 0 1px 2px rgba(0,0,0,.3), 0 16px 40px -16px rgba(0,0,0,.6);
     --shadow-lift: 0 2px 6px rgba(0,0,0,.4), 0 32px 70px -22px rgba(0,0,0,.7);
   }
