@@ -552,14 +552,12 @@ const CONTENT = {
 
   // PROJECTS & CAMPAIGNS  (type: "video" | "image" | "both")
   work: [
-    { title: "Aurora — Fragrance Film",   caption: "Campaign · Video + Stills", type: "both",  span: "c-8" },
-    { title: "Neon Botanica",             caption: "Series · Image",            type: "image", span: "c-4" },
-    { title: "Midnight Drive",            caption: "Music Video · Video",       type: "video", span: "c-4" },
-    { title: "Atlas Footwear Launch",     caption: "Campaign · Video + Stills", type: "both",  span: "c-4" },
-    { title: "Porcelain",                 caption: "Editorial · Image",         type: "image", span: "c-4" },
-    { title: "Tide — Spec Ad",            caption: "Commercial · Video",        type: "video", span: "c-8" },
-    { title: "Solar Myths",               caption: "Concept Film · Video",      type: "video", span: "c-6" },
-    { title: "Bloom Report Vol. 2",       caption: "Brand Campaign · Both",     type: "both",  span: "c-6" }
+    { title: "Movement — Commercial",   caption: "Campaign · Image", type: "image", span: "c-8", img: "images/commercial-1.jpg" },
+    { title: "Mediterranean Light",     caption: "Location · Image", type: "image", span: "c-4", img: "images/goldenhour-mediterranean.jpg" },
+    { title: "Rooftop, Golden Hour",    caption: "Editorial · Image", type: "image", span: "c-4", img: "images/rooftop-goldenhour.jpg" },
+    { title: "Studio Commercial",       caption: "Campaign · Image", type: "image", span: "c-8", img: "images/commercial-3.jpg" },
+    { title: "Moroccan Riad",           caption: "Location · Image", type: "image", span: "c-6", img: "images/moroccan-riad.jpg" },
+    { title: "Poolside Terrace",        caption: "Location · Image", type: "image", span: "c-6", img: "images/poolside-terrace.jpg" }
   ],
 
   // VIDEO GENERATIONS
@@ -571,17 +569,23 @@ const CONTENT = {
     { title: "Weather Systems",  caption: "Abstract · loop",       span: "c-4" }
   ],
 
-  // IMAGE GENERATIONS  (height is just the tile's visual height in px)
+  // IMAGE GENERATIONS  (add img: "images/…" for a real photo; height is only used by gradient placeholders)
   images: [
-    { title: "Golden Hour Study", height: 340 },
-    { title: "Cyber Souk",        height: 260 },
-    { title: "Portrait No. 7",    height: 400 },
-    { title: "Overgrowth",        height: 300 },
-    { title: "Ceramic Future",    height: 360 },
-    { title: "Desert Bloom",      height: 250 },
-    { title: "Analog Ghost",      height: 380 },
-    { title: "Interior Light",    height: 290 },
-    { title: "Paper Cities",      height: 330 }
+    { title: "Editorial · Golden Hour", img: "images/editorial-1.jpg" },
+    { title: "Studio Portrait",         img: "images/studio-portrait.jpg" },
+    { title: "Lifestyle Story",         img: "images/lifestyle-1.jpg" },
+    { title: "Mediterranean Light",     img: "images/goldenhour-mediterranean.jpg" },
+    { title: "Editorial · Film",        img: "images/editorial-3.jpg" },
+    { title: "UGC Diary",               img: "images/ugc-1.jpg" },
+    { title: "Everyday Moments",        img: "images/lifestyle-3.jpg" },
+    { title: "Editorial · Portrait",    img: "images/editorial-5.jpg" },
+    { title: "Villa Interior",          img: "images/villa-interior.jpg" },
+    { title: "Golden Afternoon",        img: "images/lifestyle-4.jpg" },
+    { title: "Editorial · Studio",      img: "images/editorial-2.jpg" },
+    { title: "UGC · Vacation",          img: "images/ugc-3.jpg" },
+    { title: "Sunset Boardwalk",        img: "images/sunset-boardwalk.jpg" },
+    { title: "Commercial · Beauty",     img: "images/commercial-5.jpg" },
+    { title: "City Lifestyle",          img: "images/lifestyle-5.jpg" }
   ],
 
   // SERVICES  (icon: "video" | "image" | "direction", accent: "clay" | "green" | "blue")
@@ -592,7 +596,8 @@ const CONTENT = {
   ],
 
   about: {
-    portraitLabel: "Replace with your portrait",
+    portrait: "images/studio-portrait.jpg",
+    portraitLabel: "",
     lead: "I'm itsomarissa, an AI creative working at the seam of art direction and generative technology.",
     paragraphs: [
       "My work starts with a feeling and a frame, then uses whatever model gets there — Sora, Runway, Midjourney, Flux, and the rest — as a brush, not a crutch. The result is imagery and film that feels authored, not auto-generated: intentional light, consistent characters, and a point of view.",
@@ -768,23 +773,32 @@ const CONTENT = {
   var ig = $("imageGrid");
   CONTENT.images.forEach(function(m, i){
     var tile = document.createElement("div"); tile.className = "tile reveal";
-    var a = art(i+21, m.img);
-    a.style.position = "relative"; a.style.width = "100%";
-    a.style.height = (m.img ? "auto" : (m.height || 300) + "px");
-    if(m.img){ a.style.minHeight = (m.height || 300) + "px"; }
-    tile.appendChild(a);
+    var media;
+    if(m.img){
+      media = document.createElement("img");        // real photo → shows at full aspect
+      media.className = "art"; media.src = m.img; media.alt = m.title; media.loading = "lazy";
+      media.style.cssText = "display:block;width:100%;height:auto;";
+    } else {
+      media = art(i+21);                             // no image → teal gradient placeholder
+      media.style.position = "relative"; media.style.width = "100%"; media.style.height = (m.height || 300) + "px";
+    }
+    tile.appendChild(media);
     tile.insertAdjacentHTML("beforeend", '<div class="tcap">'+esc(m.title)+'</div>');
-    tile.addEventListener("click", function(){ openLB({ title: m.title, caption: "Still · Image", img: m.img, desc: m.desc }, i+21); });
+    tile.addEventListener("click", function(){ openLB({ title: m.title, caption: m.caption || "Still · Image", img: m.img, desc: m.desc }, i+21); });
     ig.appendChild(tile);
   });
 
-  /* ---- filters ---- */
-  var filterDefs = [
+  /* ---- filters (only show buttons for media types actually present) ---- */
+  var present = {}; CONTENT.work.forEach(function(w){ present[w.type] = true; });
+  var allDefs = [
     { f: "all",   label: "All work" },
     { f: "both",  label: "Campaigns" },
     { f: "video", label: "Video" },
     { f: "image", label: "Image" }
   ];
+  var filterDefs = Object.keys(present).length > 1
+    ? allDefs.filter(function(d){ return d.f === "all" || present[d.f]; })
+    : [];
   $("workFilters").innerHTML = filterDefs.map(function(d, i){
     return '<button class="filter'+(i===0?" active":"")+'" data-f="'+d.f+'">'+d.label+'</button>';
   }).join("");
