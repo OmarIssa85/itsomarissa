@@ -1,0 +1,315 @@
+# Pages CMS configuration — powers the visual editor at https://app.pagescms.org
+# Sign in with GitHub, open this repo, and these become drag-and-drop forms.
+
+media:
+  - name: images
+    label: Images
+    input: images
+    output: images
+    extensions: [jpg, jpeg, png, webp, gif, svg, avif]
+  - name: videos
+    label: Videos
+    input: videos
+    output: videos
+    extensions: [mp4, webm, mov, m4v]
+
+content:
+  - name: site
+    label: Site content
+    type: file
+    path: content.json
+    format: json
+    fields:
+      - name: brand
+        label: Brand / name
+        type: string
+
+      - name: hero
+        label: Hero (top of page)
+        type: object
+        fields:
+          - name: eyebrow
+            label: Eyebrow line
+            type: string
+          - name: headlineHTML
+            label: Headline (HTML allowed)
+            type: text
+          - name: subHTML
+            label: Intro paragraph (HTML allowed)
+            type: text
+          - name: availability
+            label: Availability line
+            type: string
+          - name: primaryCta
+            label: Primary button text
+            type: string
+          - name: secondaryCta
+            label: Secondary button text
+            type: string
+
+      - name: nav
+        label: Navigation links
+        type: object
+        list: true
+        fields:
+          - name: label
+            label: Label
+            type: string
+          - name: href
+            label: "Link (e.g. #work)"
+            type: string
+          - name: cta
+            label: Show as button
+            type: boolean
+
+      - name: tools
+        label: Tools strip (scrolling logos)
+        type: string
+        list: true
+
+      - name: work
+        label: Projects & Campaigns
+        type: object
+        list: true
+        fields:
+          - name: title
+            label: Title
+            type: string
+          - name: caption
+            label: Caption
+            type: string
+          - name: type
+            label: Media type
+            type: select
+            options:
+              values: [image, video, both]
+          - name: span
+            label: Tile width
+            type: select
+            options:
+              values: [c-4, c-6, c-8]
+          - name: img
+            label: Image
+            type: image
+            media: images
+          - name: video
+            label: Video file (optional)
+            type: file
+            media: videos
+          - name: embed
+            label: YouTube / Vimeo link (optional)
+            type: string
+          - name: desc
+            label: Description (optional)
+            type: text
+
+      - name: videos
+        label: Video Generations
+        type: object
+        list: true
+        fields:
+          - name: title
+            label: Title
+            type: string
+          - name: caption
+            label: Caption
+            type: string
+          - name: span
+            label: Tile width
+            type: select
+            options:
+              values: [c-4, c-6, c-8]
+          - name: img
+            label: Poster image (optional)
+            type: image
+            media: images
+          - name: video
+            label: Video file (optional)
+            type: file
+            media: videos
+          - name: embed
+            label: YouTube / Vimeo link (optional)
+            type: string
+
+      - name: images
+        label: Image Generations (gallery)
+        type: object
+        list: true
+        fields:
+          - name: title
+            label: Title
+            type: string
+          - name: img
+            label: Image
+            type: image
+            media: images
+          - name: desc
+            label: Description (optional)
+            type: text
+
+      - name: services
+        label: Services
+        type: object
+        list: true
+        fields:
+          - name: num
+            label: Number
+            type: string
+          - name: icon
+            label: Icon
+            type: select
+            options:
+              values: [video, image, direction]
+          - name: accent
+            label: Accent colour
+            type: select
+            options:
+              values: [clay, green, blue]
+          - name: title
+            label: Title
+            type: string
+          - name: desc
+            label: Description
+            type: text
+          - name: points
+            label: Bullet points
+            type: string
+            list: true
+
+      - name: about
+        label: About
+        type: object
+        fields:
+          - name: portrait
+            label: Portrait photo
+            type: image
+            media: images
+          - name: portraitLabel
+            label: Photo caption (optional)
+            type: string
+          - name: lead
+            label: Lead sentence
+            type: text
+          - name: paragraphs
+            label: Paragraphs
+            type: text
+            list: true
+          - name: stats
+            label: Stats
+            type: object
+            list: true
+            fields:
+              - name: n
+                label: Number
+                type: string
+              - name: l
+                label: Label
+                type: string
+          - name: cta
+            label: Button text
+            type: string
+
+      - name: contact
+        label: Contact
+        type: object
+        fields:
+          - name: email
+            label: Email
+            type: string
+          - name: socials
+            label: Social links (leave blank to hide)
+            type: object
+            fields:
+              - name: instagram
+                label: Instagram URL
+                type: string
+              - name: tiktok
+                label: TikTok URL
+                type: string
+              - name: youtube
+                label: YouTube URL
+                type: string
+              - name: linkedin
+                label: LinkedIn URL
+                type: string
+              - name: behance
+                label: Behance URL
+                type: string
+
+      - name: sections
+        label: Section headings
+        type: object
+        fields:
+          - name: work
+            label: Projects heading
+            type: object
+            fields:
+              - name: eyebrow
+                type: string
+              - name: titleHTML
+                label: Title (HTML allowed)
+                type: string
+              - name: desc
+                type: text
+          - name: video
+            label: Video heading
+            type: object
+            fields:
+              - name: eyebrow
+                type: string
+              - name: titleHTML
+                label: Title (HTML allowed)
+                type: string
+              - name: desc
+                type: text
+          - name: image
+            label: Image heading
+            type: object
+            fields:
+              - name: eyebrow
+                type: string
+              - name: titleHTML
+                label: Title (HTML allowed)
+                type: string
+              - name: desc
+                type: text
+          - name: services
+            label: Services heading
+            type: object
+            fields:
+              - name: eyebrow
+                type: string
+              - name: titleHTML
+                label: Title (HTML allowed)
+                type: string
+              - name: desc
+                type: text
+          - name: about
+            label: About heading
+            type: object
+            fields:
+              - name: eyebrow
+                type: string
+              - name: titleHTML
+                label: Title (HTML allowed)
+                type: string
+              - name: desc
+                type: text
+          - name: contact
+            label: Contact heading
+            type: object
+            fields:
+              - name: eyebrow
+                type: string
+              - name: titleHTML
+                label: Title (HTML allowed)
+                type: string
+              - name: desc
+                type: text
+
+      - name: footerLeft
+        label: Footer (left)
+        type: string
+      - name: footerMid
+        label: Footer (middle)
+        type: string

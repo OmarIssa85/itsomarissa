@@ -1,24 +1,35 @@
 # itsomarissa — AI Creative portfolio
 
-A single-page portfolio site. Everything is in one file, `index.html`, with **no build step** — it runs anywhere.
+A single-page portfolio site. **No build step** — it runs anywhere.
+
+- `index.html` — the design + code (rendering engine).
+- `content.json` — all your editable content (text, projects, images, links).
+- `.pages.yml` — config for the visual editor (Pages CMS).
+- `images/`, `videos/` — your media files.
 
 ---
 
-## 1. Editing your content
+## 1. Editing your content — two ways
 
-Open `index.html` and find the block that starts with:
+### A) Visual editor (easiest — drag & drop)
+Go to **https://app.pagescms.org**, sign in with GitHub, and open the **`itsomarissa`** repo.
+You get forms for every section: drag-drop image uploads, add/remove/reorder items, edit text,
+then **Save** — it publishes to your live site automatically. Nothing to install.
 
-```js
-const CONTENT = {
-```
+### B) By hand
+All content lives in **`content.json`**. Open it (on GitHub or locally), edit the text between
+the quotes, or add/remove an item by copying a `{ ... }` block. Commit, and the site updates.
+You never need to touch `index.html` — that's the design/code, kept separate on purpose so
+editing content can never break the layout.
 
-Everything you'd want to change — your name, headline, projects, videos, images,
-services, bio, stats, email, and social links — lives in that one object. Edit the
-text between the quotes, or add/remove a project by copying a `{ ... }` line.
-
-**You never need to touch anything below the line that says `██ ENGINE ██`.**
-That's the design and code. This separation is deliberate: content lives up top,
-code lives below, so updating one never risks the other.
+### Common edits (by hand, in `content.json`)
+| I want to… | Do this |
+|---|---|
+| Change the headline | Edit `hero.headlineHTML`. Wrap a word in `<span class="serif">word</span>` to make it an italic accent. |
+| Add a project | Copy a `{ ... }` block inside `work`. Set `type` to `"video"`, `"image"`, or `"both"`, and `span` to `"c-4"` / `"c-6"` / `"c-8"` (tile width). |
+| Add a video or still | Copy a block inside `videos` or `images`. |
+| Use a real photo instead of a gradient | Add `"img": "images/photo.jpg"` to any project/video/image block. |
+| Update your email | Edit `contact.email`. |
 
 ### Common edits
 | I want to… | Do this |

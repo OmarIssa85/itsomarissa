@@ -496,142 +496,18 @@
 </div>
 
 <script>
-/* ==========================================================================
-   ██  CONTENT  ██   — THIS IS THE ONLY PART YOU NEED TO EDIT
-   --------------------------------------------------------------------------
-   Everything you can change about the site lives in this one object.
-   • Edit text between the "quotes".
-   • Add or remove a project/video/image by copying a { ... } line.
-   • `type` for work items must be "video", "image", or "both".
-   • `span` controls tile width: "c-4" (third), "c-6" (half), "c-8" (two-thirds).
-   • ADD REAL MEDIA to any work / video / image item with these optional fields:
-       img:   "images/aurora.jpg"      → shows this picture on the card (and as a
-                                          video poster). Put files in the images/ folder.
-       video: "videos/aurora.mp4"       → clicking the card plays this clip in the
-                                          lightbox. Put files in the videos/ folder.
-       embed: "https://youtu.be/XXXX"   → clicking plays a YouTube/Vimeo video inline
-                                          (use instead of `video` for hosted clips).
-       desc:  "One line about the piece" → optional caption shown under the title.
-     With no media fields, a teal gradient placeholder is shown.
-   Nothing below this block needs to change when you update content.
-   ========================================================================== */
-const CONTENT = {
-  brand: "itsomarissa",
-
-  nav: [
-    { label: "Work",      href: "#work" },
-    { label: "Video",     href: "#video" },
-    { label: "Image",     href: "#image" },
-    { label: "Services",  href: "#services" },
-    { label: "About",     href: "#about" },
-    { label: "Let's talk", href: "#contact", cta: true }
-  ],
-
-  hero: {
-    eyebrow: "AI Creative · Director · Generative Artist",
-    // Wrap words in <span class="serif">…</span> to make them italic clay accents.
-    headlineHTML: 'Prompting worlds<br>into <span class="serif">motion</span> &amp; <span class="serif">light</span>.',
-    subHTML: "I'm <strong>itsomarissa</strong> — an AI creative crafting films, campaigns, and imagery with generative tools. From first frame to final grade, I turn ideas into work that moves.",
-    availability: "Available for commissions — 2026",
-    primaryCta: "View the work",
-    secondaryCta: "Start a project"
-  },
-
-  // Scrolling logo/tool strip
-  tools: ["Sora","Runway","Kling","Veo","Midjourney","Flux","Firefly","Nano Banana","Higgsfield","Luma","Pika","ElevenLabs","After Effects"],
-
-  // Section headers
-  sections: {
-    work:     { eyebrow: "Projects & Campaigns", titleHTML: "Selected work,<br>video &amp; image.", desc: "End-to-end campaigns and one-off pieces — concepted, generated, edited, and graded. Filter by medium below." },
-    video:    { eyebrow: "Video Generations", titleHTML: "Moving image.", desc: "Text-to-video, image-to-video, and motion work — cinematic sequences, loops, and short films built shot by shot." },
-    image:    { eyebrow: "Image Generations", titleHTML: "Stills &amp; series.", desc: "Editorial, product, and concept imagery — consistent characters, art-directed lighting, and print-ready detail." },
-    services: { eyebrow: "Services", titleHTML: "How we can<br>work together.", desc: "Flexible engagements — from a single hero asset to a full multi-format campaign, plus creative direction for teams adopting AI." },
-    about:    { eyebrow: "About", titleHTML: "Ideas first.<br>Tools second." },
-    contact:  { eyebrow: "Contact", titleHTML: "Let's make something worth watching.", desc: "Tell me about your project — a campaign, a film, a single hero image. I reply within a couple of days." }
-  },
-
-  // PROJECTS & CAMPAIGNS  (type: "video" | "image" | "both")
-  work: [
-    { title: "Movement — Commercial",   caption: "Campaign · Image", type: "image", span: "c-8", img: "images/commercial-1.jpg" },
-    { title: "Mediterranean Light",     caption: "Location · Image", type: "image", span: "c-4", img: "images/goldenhour-mediterranean.jpg" },
-    { title: "Rooftop, Golden Hour",    caption: "Editorial · Image", type: "image", span: "c-4", img: "images/rooftop-goldenhour.jpg" },
-    { title: "Studio Commercial",       caption: "Campaign · Image", type: "image", span: "c-8", img: "images/commercial-3.jpg" },
-    { title: "Moroccan Riad",           caption: "Location · Image", type: "image", span: "c-6", img: "images/moroccan-riad.jpg" },
-    { title: "Poolside Terrace",        caption: "Location · Image", type: "image", span: "c-6", img: "images/poolside-terrace.jpg" }
-  ],
-
-  // VIDEO GENERATIONS
-  videos: [
-    { title: "Chromatic Dreams", caption: "Cinematic loop · 4K",   span: "c-6" },
-    { title: "The Long Commute", caption: "Narrative short · 90s", span: "c-6" },
-    { title: "Liquid Metal",     caption: "Product motion · 15s",  span: "c-4" },
-    { title: "Festival ID",      caption: "Title sequence · 20s",  span: "c-4" },
-    { title: "Weather Systems",  caption: "Abstract · loop",       span: "c-4" }
-  ],
-
-  // IMAGE GENERATIONS  (add img: "images/…" for a real photo; height is only used by gradient placeholders)
-  images: [
-    { title: "Editorial · Golden Hour", img: "images/editorial-1.jpg" },
-    { title: "Studio Portrait",         img: "images/studio-portrait.jpg" },
-    { title: "Lifestyle Story",         img: "images/lifestyle-1.jpg" },
-    { title: "Mediterranean Light",     img: "images/goldenhour-mediterranean.jpg" },
-    { title: "Editorial · Film",        img: "images/editorial-3.jpg" },
-    { title: "UGC Diary",               img: "images/ugc-1.jpg" },
-    { title: "Everyday Moments",        img: "images/lifestyle-3.jpg" },
-    { title: "Editorial · Portrait",    img: "images/editorial-5.jpg" },
-    { title: "Villa Interior",          img: "images/villa-interior.jpg" },
-    { title: "Golden Afternoon",        img: "images/lifestyle-4.jpg" },
-    { title: "Editorial · Studio",      img: "images/editorial-2.jpg" },
-    { title: "UGC · Vacation",          img: "images/ugc-3.jpg" },
-    { title: "Sunset Boardwalk",        img: "images/sunset-boardwalk.jpg" },
-    { title: "Commercial · Beauty",     img: "images/commercial-5.jpg" },
-    { title: "City Lifestyle",          img: "images/lifestyle-5.jpg" }
-  ],
-
-  // SERVICES  (icon: "video" | "image" | "direction", accent: "clay" | "green" | "blue")
-  services: [
-    { num: "01", icon: "video",     accent: "clay",  title: "AI Video Production",   desc: "Concept-to-delivery generative films, ads, and social edits with sound design and grade.", points: ["Commercials & brand films", "Short-form / social cutdowns", "Music & narrative pieces"] },
-    { num: "02", icon: "image",     accent: "green", title: "Image & Art Direction", desc: "Series-consistent stills for campaigns, editorial, product, and concept exploration.", points: ["Campaign key art", "Product & lifestyle", "Character & world design"] },
-    { num: "03", icon: "direction", accent: "blue",  title: "Creative Direction",    desc: "Campaign strategy, prompt systems, and pipelines for teams bringing AI into their workflow.", points: ["Concept & moodboards", "Prompt / style systems", "Workshops & consulting"] }
-  ],
-
-  about: {
-    portrait: "images/studio-portrait.jpg",
-    portraitLabel: "",
-    lead: "I'm itsomarissa, an AI creative working at the seam of art direction and generative technology.",
-    paragraphs: [
-      "My work starts with a feeling and a frame, then uses whatever model gets there — Sora, Runway, Midjourney, Flux, and the rest — as a brush, not a crutch. The result is imagery and film that feels authored, not auto-generated: intentional light, consistent characters, and a point of view.",
-      "I partner with brands, agencies, musicians, and founders who want to move fast without giving up craft."
-    ],
-    stats: [
-      { n: "120+", l: "Pieces shipped" },
-      { n: "30+",  l: "Brands & clients" },
-      { n: "5",    l: "Years directing" }
-    ],
-    cta: "Work with me"
-  },
-
-  contact: {
-    email: "itsomarissa@gmail.com",
-    // Add your real profile URLs. Leave a value as "" to hide that icon.
-    socials: {
-      instagram: "https://instagram.com/itsomarissa",
-      tiktok:    "",
-      youtube:   "",
-      linkedin:  "",
-      behance:   ""
-    }
-  },
-
-  footerLeft: "© 2026 itsomarissa — AI Creative",
-  footerMid:  "Designed in the studio, generated with intent."
-};
+/* Site content is loaded at runtime from content.json (edited via the CMS). */
 
 /* ==========================================================================
    ██  ENGINE  ██   — rendering + interactions. No need to edit below here.
    ========================================================================== */
 (function(){
   "use strict";
+  fetch("content.json", { cache: "no-store" })
+    .then(function(r){ if(!r.ok) throw new Error("HTTP " + r.status); return r.json(); })
+    .then(run)
+    .catch(function(err){ console.error("Could not load content.json:", err); });
+  function run(CONTENT){
   var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   var $ = function(id){ return document.getElementById(id); };
   function esc(s){ return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;"); }
@@ -950,5 +826,6 @@ const CONTENT = {
   window.addEventListener("pointermove", function(e){ mx = e.clientX/window.innerWidth; my = e.clientY/window.innerHeight; }, { passive: true });
   new MutationObserver(function(){ cols = accentColors(); }).observe(root, { attributes: true, attributeFilter: ["data-theme"] });
   boot();
+  } // end run(CONTENT)
 })();
 </script>
