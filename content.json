@@ -2,8 +2,6 @@
   "brand": "itsomarissa",
   "nav": [
     { "label": "Work", "href": "#work" },
-    { "label": "Video", "href": "#video" },
-    { "label": "Image", "href": "#image" },
     { "label": "Services", "href": "#services" },
     { "label": "About", "href": "#about" },
     { "label": "Let's talk", "href": "#contact", "cta": true }
@@ -18,44 +16,118 @@
   },
   "tools": ["Sora", "Runway", "Kling", "Veo", "Midjourney", "Flux", "Firefly", "Nano Banana", "Higgsfield", "Luma", "Pika", "ElevenLabs", "After Effects"],
   "sections": {
-    "work":     { "eyebrow": "Projects & Campaigns", "titleHTML": "Selected work,<br>video &amp; image.", "desc": "End-to-end campaigns and one-off pieces — concepted, generated, edited, and graded. Filter by medium below." },
-    "video":    { "eyebrow": "Video Generations", "titleHTML": "Moving image.", "desc": "Text-to-video, image-to-video, and motion work — cinematic sequences, loops, and short films built shot by shot." },
-    "image":    { "eyebrow": "Image Generations", "titleHTML": "Stills &amp; series.", "desc": "Editorial, product, and concept imagery — consistent characters, art-directed lighting, and print-ready detail." },
+    "work":     { "eyebrow": "Selected Work", "titleHTML": "Projects &amp; Campaigns", "desc": "Albums of campaigns, video, and image work — click any project to open its gallery. Use the tabs to filter." },
     "services": { "eyebrow": "Services", "titleHTML": "How we can<br>work together.", "desc": "Flexible engagements — from a single hero asset to a full multi-format campaign, plus creative direction for teams adopting AI." },
     "about":    { "eyebrow": "About", "titleHTML": "Ideas first.<br>Tools second.", "desc": "" },
     "contact":  { "eyebrow": "Contact", "titleHTML": "Let's make something worth watching.", "desc": "Tell me about your project — a campaign, a film, a single hero image. I reply within a couple of days." }
   },
-  "work": [
-    { "title": "Movement — Commercial", "caption": "Campaign · Image", "type": "image", "span": "c-8", "img": "images/commercial-1.jpg" },
-    { "title": "Mediterranean Light", "caption": "Location · Image", "type": "image", "span": "c-4", "img": "images/goldenhour-mediterranean.jpg" },
-    { "title": "Rooftop, Golden Hour", "caption": "Editorial · Image", "type": "image", "span": "c-4", "img": "images/rooftop-goldenhour.jpg" },
-    { "title": "Studio Commercial", "caption": "Campaign · Image", "type": "image", "span": "c-8", "img": "images/commercial-3.jpg" },
-    { "title": "Moroccan Riad", "caption": "Location · Image", "type": "image", "span": "c-6", "img": "images/moroccan-riad.jpg" },
-    { "title": "Poolside Terrace", "caption": "Location · Image", "type": "image", "span": "c-6", "img": "images/poolside-terrace.jpg" }
-  ],
-  "videos": [
-    { "title": "Chromatic Dreams", "caption": "Cinematic loop · 4K", "span": "c-6" },
-    { "title": "The Long Commute", "caption": "Narrative short · 90s", "span": "c-6" },
-    { "title": "Liquid Metal", "caption": "Product motion · 15s", "span": "c-4" },
-    { "title": "Festival ID", "caption": "Title sequence · 20s", "span": "c-4" },
-    { "title": "Weather Systems", "caption": "Abstract · loop", "span": "c-4" }
-  ],
-  "images": [
-    { "title": "Editorial · Golden Hour", "img": "images/editorial-1.jpg" },
-    { "title": "Studio Portrait", "img": "images/studio-portrait.jpg" },
-    { "title": "Lifestyle Story", "img": "images/lifestyle-1.jpg" },
-    { "title": "Mediterranean Light", "img": "images/goldenhour-mediterranean.jpg" },
-    { "title": "Editorial · Film", "img": "images/editorial-3.jpg" },
-    { "title": "UGC Diary", "img": "images/ugc-1.jpg" },
-    { "title": "Everyday Moments", "img": "images/lifestyle-3.jpg" },
-    { "title": "Editorial · Portrait", "img": "images/editorial-5.jpg" },
-    { "title": "Villa Interior", "img": "images/villa-interior.jpg" },
-    { "title": "Golden Afternoon", "img": "images/lifestyle-4.jpg" },
-    { "title": "Editorial · Studio", "img": "images/editorial-2.jpg" },
-    { "title": "UGC · Vacation", "img": "images/ugc-3.jpg" },
-    { "title": "Sunset Boardwalk", "img": "images/sunset-boardwalk.jpg" },
-    { "title": "Commercial · Beauty", "img": "images/commercial-5.jpg" },
-    { "title": "City Lifestyle", "img": "images/lifestyle-5.jpg" }
+  "projects": [
+    {
+      "title": "Commercial Series",
+      "caption": "Campaign · Product",
+      "category": "campaign",
+      "span": "c-8",
+      "cover": "images/commercial-1.jpg",
+      "media": [
+        { "image": "images/commercial-1.jpg" },
+        { "image": "images/commercial-2.jpg" },
+        { "image": "images/commercial-3.jpg" },
+        { "image": "images/commercial-4.jpg" },
+        { "image": "images/commercial-5.jpg" },
+        { "video": "videos/video-1.mp4" }
+      ]
+    },
+    {
+      "title": "Mediterranean Escapes",
+      "caption": "Campaign · Travel",
+      "category": "campaign",
+      "span": "c-4",
+      "cover": "images/goldenhour-mediterranean.jpg",
+      "media": [
+        { "image": "images/goldenhour-mediterranean.jpg" },
+        { "image": "images/rooftop-goldenhour.jpg" },
+        { "image": "images/poolside-terrace.jpg" },
+        { "image": "images/moroccan-riad.jpg" },
+        { "image": "images/italian-villa.jpg" },
+        { "image": "images/tropical-garden.jpg" },
+        { "image": "images/villa-interior.jpg" },
+        { "image": "images/sunset-boardwalk.jpg" },
+        { "image": "images/intimate-courtyard.jpg" },
+        { "video": "videos/video-3.mp4" }
+      ]
+    },
+    {
+      "title": "Automotive Motion",
+      "caption": "Video · Cinematic",
+      "category": "video",
+      "span": "c-4",
+      "cover": "images/video-1-poster.jpg",
+      "media": [
+        { "video": "videos/video-1.mp4" }
+      ]
+    },
+    {
+      "title": "Particle Study",
+      "caption": "Video · Abstract",
+      "category": "video",
+      "span": "c-4",
+      "cover": "images/video-2-poster.jpg",
+      "media": [
+        { "video": "videos/video-2.mp4" }
+      ]
+    },
+    {
+      "title": "Aerial Descent",
+      "caption": "Video · Drone",
+      "category": "video",
+      "span": "c-4",
+      "cover": "images/video-3-poster.jpg",
+      "media": [
+        { "video": "videos/video-3.mp4" }
+      ]
+    },
+    {
+      "title": "Editorial",
+      "caption": "Series · Image",
+      "category": "image",
+      "span": "c-4",
+      "cover": "images/editorial-1.jpg",
+      "media": [
+        { "image": "images/editorial-1.jpg" },
+        { "image": "images/editorial-2.jpg" },
+        { "image": "images/editorial-3.jpg" },
+        { "image": "images/editorial-4.jpg" },
+        { "image": "images/editorial-5.jpg" }
+      ]
+    },
+    {
+      "title": "Lifestyle",
+      "caption": "Series · Image",
+      "category": "image",
+      "span": "c-4",
+      "cover": "images/lifestyle-1.jpg",
+      "media": [
+        { "image": "images/lifestyle-1.jpg" },
+        { "image": "images/lifestyle-2.jpg" },
+        { "image": "images/lifestyle-3.jpg" },
+        { "image": "images/lifestyle-4.jpg" },
+        { "image": "images/lifestyle-5.jpg" }
+      ]
+    },
+    {
+      "title": "UGC Style",
+      "caption": "Series · Image",
+      "category": "image",
+      "span": "c-4",
+      "cover": "images/ugc-1.jpg",
+      "media": [
+        { "image": "images/ugc-1.jpg" },
+        { "image": "images/ugc-2.jpg" },
+        { "image": "images/ugc-3.jpg" },
+        { "image": "images/ugc-4.jpg" },
+        { "image": "images/ugc-5.jpg" }
+      ]
+    }
   ],
   "services": [
     { "num": "01", "icon": "video", "accent": "clay", "title": "AI Video Production", "desc": "Concept-to-delivery generative films, ads, and social edits with sound design and grade.", "points": ["Commercials & brand films", "Short-form / social cutdowns", "Music & narrative pieces"] },

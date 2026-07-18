@@ -67,8 +67,9 @@ content:
         type: string
         list: true
 
-      - name: work
+      - name: projects
         label: Projects & Campaigns
+        description: Each project is an album. Set a category, a cover, and add its images/videos under "Media".
         type: object
         list: true
         fields:
@@ -78,74 +79,40 @@ content:
           - name: caption
             label: Caption
             type: string
-          - name: type
-            label: Media type
+          - name: category
+            label: Category (tab it appears under)
             type: select
             options:
-              values: [image, video, both]
+              values:
+                - { value: campaign, label: "Campaign (mixed images + video)" }
+                - { value: video, label: "Video (single clip, plays on click)" }
+                - { value: image, label: "Image (album of stills)" }
           - name: span
-            label: Tile width
+            label: Cover width in the grid
             type: select
             options:
               values: [c-4, c-6, c-8]
-          - name: img
-            label: Image
+          - name: cover
+            label: Cover image (the thumbnail)
             type: image
             media: images
-          - name: video
-            label: Video file (optional)
-            type: file
-            media: videos
-          - name: embed
-            label: YouTube / Vimeo link (optional)
-            type: string
-          - name: desc
-            label: Description (optional)
-            type: text
-
-      - name: videos
-        label: Video Generations
-        type: object
-        list: true
-        fields:
-          - name: title
-            label: Title
-            type: string
-          - name: caption
-            label: Caption
-            type: string
-          - name: span
-            label: Tile width
-            type: select
-            options:
-              values: [c-4, c-6, c-8]
-          - name: img
-            label: Poster image (optional)
-            type: image
-            media: images
-          - name: video
-            label: Video file (optional)
-            type: file
-            media: videos
-          - name: embed
-            label: YouTube / Vimeo link (optional)
-            type: string
-
-      - name: images
-        label: Image Generations (gallery)
-        type: object
-        list: true
-        fields:
-          - name: title
-            label: Title
-            type: string
-          - name: img
-            label: Image
-            type: image
-            media: images
-          - name: desc
-            label: Description (optional)
-            type: text
+          - name: media
+            label: Media in this project
+            description: Add images and/or videos. For a Video project, add just one video.
+            type: object
+            list: true
+            fields:
+              - name: image
+                label: Image (pick one option per row)
+                type: image
+                media: images
+              - name: video
+                label: Video file
+                type: file
+                media: videos
+              - name: embed
+                label: or YouTube / Vimeo link
+                type: string
 
       - name: services
         label: Services
@@ -241,29 +208,7 @@ content:
         type: object
         fields:
           - name: work
-            label: Projects heading
-            type: object
-            fields:
-              - name: eyebrow
-                type: string
-              - name: titleHTML
-                label: Title (HTML allowed)
-                type: string
-              - name: desc
-                type: text
-          - name: video
-            label: Video heading
-            type: object
-            fields:
-              - name: eyebrow
-                type: string
-              - name: titleHTML
-                label: Title (HTML allowed)
-                type: string
-              - name: desc
-                type: text
-          - name: image
-            label: Image heading
+            label: Work heading
             type: object
             fields:
               - name: eyebrow

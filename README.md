@@ -22,24 +22,23 @@ the quotes, or add/remove an item by copying a `{ ... }` block. Commit, and the 
 You never need to touch `index.html` — that's the design/code, kept separate on purpose so
 editing content can never break the layout.
 
+### How projects work
+Everything in the Work section is a **project (album)** in the `projects` list. Each project has:
+- `category` — `"campaign"` (mixed images + video), `"video"` (single clip, plays on click), or `"image"` (album of stills). This decides which tab it shows under.
+- `cover` — the thumbnail shown in the grid, e.g. `"images/commercial-1.jpg"`.
+- `span` — cover width: `"c-4"` / `"c-6"` / `"c-8"`.
+- `media` — the list shown when you open the project. Each entry is one of:
+  `{ "image": "images/x.jpg" }`, `{ "video": "videos/x.mp4" }`, or `{ "embed": "https://youtu.be/…" }`.
+
 ### Common edits (by hand, in `content.json`)
 | I want to… | Do this |
 |---|---|
-| Change the headline | Edit `hero.headlineHTML`. Wrap a word in `<span class="serif">word</span>` to make it an italic accent. |
-| Add a project | Copy a `{ ... }` block inside `work`. Set `type` to `"video"`, `"image"`, or `"both"`, and `span` to `"c-4"` / `"c-6"` / `"c-8"` (tile width). |
-| Add a video or still | Copy a block inside `videos` or `images`. |
-| Use a real photo instead of a gradient | Add `"img": "images/photo.jpg"` to any project/video/image block. |
+| Add a project | Copy a whole `{ ... }` block in `projects`. Set `category`, `cover`, `span`, and its `media`. |
+| Add media to a project | Add a `{ "image": "…" }` / `{ "video": "…" }` / `{ "embed": "…" }` line inside that project's `media`. |
+| Make a single-video tile | Add a project with `"category": "video"` and one video in `media`. |
+| Change the headline | Edit `hero.headlineHTML` (wrap a word in `<span class="serif">…</span>` for an accent). |
 | Update your email | Edit `contact.email`. |
-
-### Common edits
-| I want to… | Do this |
-|---|---|
-| Change the headline | Edit `hero.headlineHTML`. Wrap a word in `<span class="serif">word</span>` to make it an italic clay accent. |
-| Add a project | Copy a line inside `work: [ ... ]`. Set `type` to `"video"`, `"image"`, or `"both"`, and `span` to `"c-4"` / `"c-6"` / `"c-8"` (tile width). |
-| Add a video or still | Copy a line inside `videos: [ ... ]` or `images: [ ... ]`. |
-| Use a real photo instead of a gradient | Add `img: "https://…/photo.jpg"` to any project/video/image line. |
-| Update your email | Edit `contact.email`. |
-| Add social links | Fill in the URLs under `contact.socials`. Leave a value as `""` to hide that icon. |
+| Add social links | Fill in URLs under `contact.socials`. Leave `""` to hide an icon. |
 | Change bio / stats | Edit the `about` block. |
 
 Save, refresh the page in your browser, and you'll see the change. To preview locally,
