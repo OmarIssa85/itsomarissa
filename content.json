@@ -8,7 +8,7 @@
       "Director",
       "Visual Artist"
     ],
-    "taglineHTML": "Directing worlds into <span class=\"accent\">motion</span> &amp; <span class=\"accent\">light</span>.",
+    "taglineHTML": "Directing worlds into<br><span class=\"accent\">motion</span> &amp; <span class=\"accent\">light</span>.",
     "subHTML": "I craft Films, Campaigns, Video ADs and Imagery powered by Generative AI, from first frame to final grade.",
     "availability": "Available for commissions · 2026",
     "primaryCta": "View the work",
@@ -45,7 +45,6 @@
     "Adobe Creative Suite",
     "Luma",
     "Pika",
-    "ElevenLabs",
     "After Effects"
   ],
   "projects": [
