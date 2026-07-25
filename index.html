@@ -709,11 +709,20 @@
     if(cat === "video")    return { cls: "tag-video", label: "Video" };
     return { cls: "tag-image", label: "Image" };
   }
+  // Derive a YouTube thumbnail from a project's embed (used when no cover is set).
+  function ytThumb(p){
+    if(!p.media) return "";
+    for(var i = 0; i < p.media.length; i++){
+      var m = (p.media[i].embed || "").match(/(?:youtube\.com\/(?:watch\?v=|embed\/|shorts\/)|youtu\.be\/)([\w-]{6,})/);
+      if(m) return "https://img.youtube.com/vi/" + m[1] + "/hqdefault.jpg";
+    }
+    return "";
+  }
   function buildProjectCard(p, seed){
     var ci = catInfo(p.category);
     var isVid = p.category === "video";
     var count = (p.media && p.media.length) || 0;
-    var cover = p.cover || (p.media && p.media[0] && p.media[0].image) || "";
+    var cover = p.cover || (p.media && p.media[0] && p.media[0].image) || ytThumb(p) || "";
     var card = document.createElement("div");
     card.className = "card reveal " + (p.span || "c-4") + (p.orientation === "portrait" ? " tall" : "");
     card.dataset.tag = p.category;
