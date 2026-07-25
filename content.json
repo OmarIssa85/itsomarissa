@@ -1,9 +1,10 @@
 {
   "brand": "itsomarissa",
   "hero": {
-    "eyebrow": "AI Creative · Director · Generative Artist",
-    "headlineHTML": "Prompting worlds<br>into <span class=\"serif\">motion</span> &amp; <span class=\"serif\">light</span>.",
-    "subHTML": "I'm <strong>itsomarissa</strong> — an AI creative crafting films, campaigns, and imagery with generative tools. From first frame to final grade, I turn ideas into work that moves.",
+    "image": "images/hero-power.jpg",
+    "intro": "— I am itsomarissa",
+    "roles": ["AI Creative", "Director", "Visual Artist"],
+    "subHTML": "I craft films, campaigns, and imagery with generative tools — from first frame to final grade.",
     "availability": "Available for commissions — 2026",
     "primaryCta": "View the work",
     "secondaryCta": "Start a project"

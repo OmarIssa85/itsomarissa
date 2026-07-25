@@ -28,12 +28,17 @@ content:
         label: Hero (top of page)
         type: object
         fields:
-          - name: eyebrow
-            label: Eyebrow line
+          - name: image
+            label: Background image (you)
+            type: image
+            media: images
+          - name: intro
+            label: Intro line (e.g. "— I am ...")
             type: string
-          - name: headlineHTML
-            label: Headline (HTML allowed)
-            type: text
+          - name: roles
+            label: Typed roles (cycles through these)
+            type: string
+            list: true
           - name: subHTML
             label: Intro paragraph (HTML allowed)
             type: text
