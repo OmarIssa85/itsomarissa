@@ -260,7 +260,7 @@
   .filter:hover { color: var(--ink); border-color: var(--ink-3); }
   .filter.active { background: var(--ink); color: var(--bg); border-color: var(--ink); }
 
-  .grid { display: grid; grid-template-columns: repeat(12, 1fr); gap: clamp(16px, 2vw, 26px); }
+  .grid { display: grid; grid-template-columns: repeat(12, 1fr); gap: clamp(16px, 2vw, 26px); align-items: start; }
   .card {
     position: relative; border-radius: var(--radius); overflow: hidden; background: var(--surface);
     border: 1px solid var(--line); box-shadow: var(--shadow); cursor: pointer;
@@ -269,7 +269,7 @@
   }
   .card:hover { transform: translateY(-6px); box-shadow: var(--shadow-lift); }
   .card.hide { display: none; }
-  .card .thumb { position: relative; aspect-ratio: 4/3; overflow: hidden; }
+  .card .thumb { position: relative; aspect-ratio: 16/9; overflow: hidden; }
   .card.tall .thumb { aspect-ratio: 3/4; }
   .card .art { position: absolute; inset: 0; transition: transform .8s var(--ease); }
   .card:hover .art { transform: scale(1.06); }
@@ -714,7 +714,7 @@
     if(!p.media) return "";
     for(var i = 0; i < p.media.length; i++){
       var m = (p.media[i].embed || "").match(/(?:youtube\.com\/(?:watch\?v=|embed\/|shorts\/)|youtu\.be\/)([\w-]{6,})/);
-      if(m) return "https://img.youtube.com/vi/" + m[1] + "/hqdefault.jpg";
+      if(m) return "https://img.youtube.com/vi/" + m[1] + "/maxresdefault.jpg";
     }
     return "";
   }
@@ -727,7 +727,15 @@
     card.className = "card reveal " + (p.span || "c-4") + (p.orientation === "portrait" ? " tall" : "");
     card.dataset.tag = p.category;
     var thumb = document.createElement("div"); thumb.className = "thumb";
-    thumb.appendChild(art(seed, cover));
+    var artEl = art(seed, cover);
+    thumb.appendChild(artEl);
+    // If a maxres YouTube thumb is missing, fall back to the standard one.
+    if(/\/maxresdefault\.jpg/.test(cover)){
+      var probe = new Image(), fb = cover.replace("maxresdefault", "hqdefault");
+      probe.onload = function(){ if(probe.naturalWidth < 200) artEl.style.background = "center / cover no-repeat url('" + fb + "')"; };
+      probe.onerror = function(){ artEl.style.background = "center / cover no-repeat url('" + fb + "')"; };
+      probe.src = cover;
+    }
     var extra = '<span class="badge '+ci.cls+'"><span class="tag-dot"></span>'+ci.label+'</span>';
     if(isVid) extra += '<div class="play"><span></span></div>';
     else if(count > 1) extra += '<span class="count-chip">'+count+' items</span>';
