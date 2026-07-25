@@ -372,10 +372,12 @@
   #lb { position: fixed; inset: 0; z-index: 200; display: none; place-items: center; padding: 24px;
     background: color-mix(in srgb, var(--ink) 82%, transparent); backdrop-filter: blur(10px); }
   #lb.open { display: grid; }
-  #lb .box { max-width: 940px; width: 100%; background: var(--surface); border-radius: var(--radius); overflow: hidden; border: 1px solid var(--line-2); box-shadow: var(--shadow-lift); animation: pop .4s var(--ease); }
+  #lb .box { max-width: 1040px; width: 100%; background: var(--surface); border-radius: var(--radius); overflow: hidden; border: 1px solid var(--line-2); box-shadow: var(--shadow-lift); animation: pop .4s var(--ease); }
+  #lb.lb-portrait .box { width: calc(72svh * 9 / 16); max-width: 92vw; }   /* vertical: size by height */
   @keyframes pop { from { transform: scale(.94); opacity: 0; } }
   #lb .lbstage-wrap { position: relative; }
-  #lb .lbstage { aspect-ratio: 16/10; position: relative; background: #0a0a0a; overflow: hidden; }
+  #lb .lbstage { aspect-ratio: 16 / 9; position: relative; background: #000; overflow: hidden; }
+  #lb.lb-portrait .lbstage { aspect-ratio: 9 / 16; }
   #lb .lbnav { position: absolute; top: 50%; transform: translateY(-50%); z-index: 6; width: 44px; height: 44px; border-radius: 50%; border: none; background: color-mix(in srgb, var(--bg) 80%, transparent); color: var(--ink); font-size: 1.7rem; line-height: 1; cursor: pointer; display: none; place-items: center; transition: background .2s, color .2s; }
   #lb.has-nav .lbnav { display: grid; }
   #lb .lbprev { left: 12px; } #lb .lbnext { right: 12px; }
@@ -621,6 +623,8 @@
   function openProject(p, seed){
     $("lbTitle").textContent = p.title;
     $("lbCap").textContent = p.caption || "";
+    lb.classList.remove("lb-portrait", "lb-landscape");
+    lb.classList.add(p.orientation === "portrait" ? "lb-portrait" : "lb-landscape");
     album = (p.media && p.media.length) ? p.media.slice() : (p.cover ? [{ image: p.cover }] : []);
     lbThumbs.innerHTML = "";
     if(album.length > 1){
@@ -711,7 +715,7 @@
     var count = (p.media && p.media.length) || 0;
     var cover = p.cover || (p.media && p.media[0] && p.media[0].image) || "";
     var card = document.createElement("div");
-    card.className = "card reveal " + (p.span || "c-4");
+    card.className = "card reveal " + (p.span || "c-4") + (p.orientation === "portrait" ? " tall" : "");
     card.dataset.tag = p.category;
     var thumb = document.createElement("div"); thumb.className = "thumb";
     thumb.appendChild(art(seed, cover));

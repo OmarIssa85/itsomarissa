@@ -100,6 +100,13 @@ content:
             type: select
             options:
               values: [c-4, c-6, c-8, c-12]
+          - name: orientation
+            label: Orientation (cover shape + player)
+            type: select
+            options:
+              values:
+                - { value: landscape, label: "Landscape (16:9)" }
+                - { value: portrait, label: "Portrait / vertical (9:16)" }
           - name: cover
             label: Cover image (the thumbnail)
             type: image

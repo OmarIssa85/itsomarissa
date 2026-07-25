@@ -2,15 +2,15 @@
   "brand": "itsomarissa",
   "hero": {
     "image": "images/hero-power.jpg",
-    "intro": "— I am itsomarissa",
+    "intro": "I am itsomarissa",
     "roles": [
       "AI Creative",
       "Director",
       "Visual Artist"
     ],
-    "taglineHTML": "Prompting worlds into <span class=\"serif\">motion</span> &amp; <span class=\"serif\">light</span>.",
-    "subHTML": "I craft films, campaigns, and imagery with generative tools — from first frame to final grade.",
-    "availability": "Available for commissions — 2026",
+    "taglineHTML": "Directing worlds into<br><span class=\"accent\">motion</span> &amp; <span class=\"accent\">light</span>.",
+    "subHTML": "I craft Films, Campaigns, Video ADs and Imagery powered by Generative AI, from first frame to final grade.",
+    "availability": "Available for commissions · 2026",
     "primaryCta": "View the work",
     "secondaryCta": "Start a project"
   },
@@ -45,7 +45,6 @@
     "Adobe Creative Suite",
     "Luma",
     "Pika",
-    "ElevenLabs",
     "After Effects"
   ],
   "projects": [
@@ -61,7 +60,8 @@
           "video": "",
           "embed": "https://youtu.be/NCIWYkLmMlg"
         }
-      ]
+      ],
+      "orientation": "landscape"
     },
     {
       "title": "ISSA Perfume Social AD",
@@ -75,7 +75,8 @@
           "video": "",
           "embed": "https://youtube.com/shorts/VNh7aW2XoPM?feature=share"
         }
-      ]
+      ],
+      "orientation": "portrait"
     },
     {
       "title": "Bose Headphones Spec AD",
@@ -89,7 +90,8 @@
           "video": "",
           "embed": "https://youtu.be/vF6HN1D6P1k"
         }
-      ]
+      ],
+      "orientation": "landscape"
     },
     {
       "title": "KRATON Shoes AD",
@@ -103,7 +105,8 @@
           "video": "",
           "embed": "https://youtu.be/alcyVqGwDaA"
         }
-      ]
+      ],
+      "orientation": "landscape"
     }
   ],
   "services": [
@@ -149,7 +152,7 @@
     "portraitLabel": "",
     "lead": "I'm itsomarissa, an AI creative working at the seam of art direction and generative technology.",
     "paragraphs": [
-      "My work starts with a feeling and a frame, then uses whatever model gets there — Sora, Runway, Midjourney, Flux, and the rest — as a brush, not a crutch. The result is imagery and film that feels authored, not auto-generated: intentional light, consistent characters, and a point of view.",
+      "My work starts with a feeling and a frame, then uses whatever model gets there, Sora, Runway, Midjourney, Flux, and the rest, as a brush, not a crutch. The result is imagery and film that feels authored, not auto-generated: intentional light, consistent characters, and a point of view.",
       "I partner with brands, agencies, musicians, and founders who want to move fast without giving up craft."
     ],
     "stats": [
@@ -182,12 +185,12 @@
     "work": {
       "eyebrow": "Selected Work",
       "titleHTML": "Projects &amp; Campaigns",
-      "desc": "Albums of campaigns, video, and image work — click any project to open its gallery. Use the tabs to filter."
+      "desc": "Albums of campaigns, video, and image work, click any project to open its gallery. Use the tabs to filter."
     },
     "services": {
       "eyebrow": "Services",
       "titleHTML": "How we can<br>work together.",
-      "desc": "Flexible engagements — from a single hero asset to a full multi-format campaign, plus creative direction for teams adopting AI."
+      "desc": "Flexible engagements, from a single hero asset to a full multi-format campaign, plus creative direction for teams adopting AI."
     },
     "about": {
       "eyebrow": "About",
@@ -197,9 +200,9 @@
     "contact": {
       "eyebrow": "Contact",
       "titleHTML": "Let's make something worth watching.",
-      "desc": "Tell me about your project — a campaign, a film, a single hero image. I reply within a couple of days."
+      "desc": "Tell me about your project, a campaign, a film, a single hero image. I reply within a couple of days."
     }
   },
-  "footerLeft": "© 2026 itsomarissa — AI Creative",
+  "footerLeft": "© 2026 itsomarissa, AI Creative",
   "footerMid": "Designed in the studio, generated with intent."
 }
