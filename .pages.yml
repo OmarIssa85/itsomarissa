@@ -99,7 +99,7 @@ content:
             label: Cover width in the grid
             type: select
             options:
-              values: [c-4, c-6, c-8]
+              values: [c-4, c-6, c-8, c-12]
           - name: cover
             label: Cover image (the thumbnail)
             type: image

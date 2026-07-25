@@ -60,7 +60,7 @@ collections:
               - name: span
                 label: Cover width in the grid
                 widget: select
-                options: [c-4, c-6, c-8]
+                options: [c-4, c-6, c-8, c-12]
                 default: c-4
               - { name: cover, label: Cover image (thumbnail), widget: image, required: false }
               - label: Media in this project
