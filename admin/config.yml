@@ -1,0 +1,150 @@
+# Sveltia CMS config — the in-site editor at /admin
+# Sign in at /admin with a GitHub Personal Access Token (no OAuth server needed).
+
+backend:
+  name: github
+  repo: OmarIssa85/itsomarissa
+  branch: main
+
+# Where uploaded images are stored / linked from
+media_folder: images
+public_folder: /images
+
+collections:
+  - name: site
+    label: Site content
+    files:
+      - name: content
+        label: Portfolio content
+        file: content.json
+        fields:
+          - { name: brand, label: Brand / name, widget: string }
+
+          - label: Hero (top of page)
+            name: hero
+            widget: object
+            fields:
+              - { name: eyebrow, label: Eyebrow line, widget: string }
+              - { name: headlineHTML, label: Headline (HTML allowed), widget: text }
+              - { name: subHTML, label: Intro paragraph (HTML allowed), widget: text }
+              - { name: availability, label: Availability line, widget: string }
+              - { name: primaryCta, label: Primary button text, widget: string }
+              - { name: secondaryCta, label: Secondary button text, widget: string }
+
+          - label: Navigation links
+            name: nav
+            widget: list
+            fields:
+              - { name: label, label: Label, widget: string }
+              - { name: href, label: "Link (e.g. #work)", widget: string }
+              - { name: cta, label: Show as button, widget: boolean, required: false, default: false }
+
+          - { name: tools, label: Tools strip (scrolling logos), widget: list }
+
+          - label: Projects & Campaigns
+            name: projects
+            widget: list
+            summary: "{{fields.title}} — {{fields.category}}"
+            fields:
+              - { name: title, label: Title, widget: string }
+              - { name: caption, label: Caption, widget: string }
+              - name: category
+                label: Category (tab it appears under)
+                widget: select
+                options:
+                  - { label: "Campaign (mixed images + video)", value: campaign }
+                  - { label: "Video (single clip, plays on click)", value: video }
+                  - { label: "Image (album of stills)", value: image }
+              - name: span
+                label: Cover width in the grid
+                widget: select
+                options: [c-4, c-6, c-8]
+                default: c-4
+              - { name: cover, label: Cover image (thumbnail), widget: image, required: false }
+              - label: Media in this project
+                name: media
+                widget: list
+                required: false
+                summary: "{{fields.image}}{{fields.video}}{{fields.embed}}"
+                fields:
+                  - { name: image, label: Image, widget: image, required: false }
+                  - { name: video, label: Video file, widget: file, required: false, media_folder: "/videos", public_folder: "/videos" }
+                  - { name: embed, label: or YouTube / Vimeo link, widget: string, required: false }
+
+          - label: Services
+            name: services
+            widget: list
+            fields:
+              - { name: num, label: Number, widget: string }
+              - { name: icon, label: Icon, widget: select, options: [video, image, direction] }
+              - { name: accent, label: Accent colour, widget: select, options: [clay, green, blue] }
+              - { name: title, label: Title, widget: string }
+              - { name: desc, label: Description, widget: text }
+              - { name: points, label: Bullet points, widget: list }
+
+          - label: About
+            name: about
+            widget: object
+            fields:
+              - { name: portrait, label: Portrait photo, widget: image, required: false }
+              - { name: portraitLabel, label: Photo caption (optional), widget: string, required: false }
+              - { name: lead, label: Lead sentence, widget: text }
+              - { name: paragraphs, label: Paragraphs, widget: list }
+              - label: Stats
+                name: stats
+                widget: list
+                fields:
+                  - { name: n, label: Number, widget: string }
+                  - { name: l, label: Label, widget: string }
+              - { name: cta, label: Button text, widget: string }
+
+          - label: Contact
+            name: contact
+            widget: object
+            fields:
+              - { name: email, label: Email, widget: string }
+              - label: Social links (leave blank to hide)
+                name: socials
+                widget: object
+                fields:
+                  - { name: instagram, label: Instagram URL, widget: string, required: false }
+                  - { name: tiktok, label: TikTok URL, widget: string, required: false }
+                  - { name: youtube, label: YouTube URL, widget: string, required: false }
+                  - { name: linkedin, label: LinkedIn URL, widget: string, required: false }
+                  - { name: behance, label: Behance URL, widget: string, required: false }
+
+          - label: Section headings
+            name: sections
+            widget: object
+            fields:
+              - label: Work heading
+                name: work
+                widget: object
+                fields:
+                  - { name: eyebrow, widget: string }
+                  - { name: titleHTML, label: Title (HTML allowed), widget: string }
+                  - { name: desc, widget: text, required: false }
+              - label: Services heading
+                name: services
+                widget: object
+                fields:
+                  - { name: eyebrow, widget: string }
+                  - { name: titleHTML, label: Title (HTML allowed), widget: string }
+                  - { name: desc, widget: text, required: false }
+              - label: About heading
+                name: about
+                widget: object
+                fields:
+                  - { name: eyebrow, widget: string }
+                  - { name: titleHTML, label: Title (HTML allowed), widget: string }
+                  - { name: desc, widget: text, required: false }
+              - label: Contact heading
+                name: contact
+                widget: object
+                fields:
+                  - { name: eyebrow, widget: string }
+                  - { name: titleHTML, label: Title (HTML allowed), widget: string }
+                  - { name: desc, widget: text, required: false }
+
+          - { name: footerLeft, label: Footer (left), widget: string }
+          - { name: footerMid, label: Footer (middle), widget: string }
