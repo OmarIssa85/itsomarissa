@@ -49,6 +49,21 @@
   ],
   "projects": [
     {
+      "title": "FIFA 2026 Video",
+      "caption": "World Building · Film · Video Generation",
+      "category": "video",
+      "span": "c-12",
+      "orientation": "landscape",
+      "cover": "",
+      "media": [
+        {
+          "image": "",
+          "video": "",
+          "embed": "https://youtu.be/0WKxM-slSPo"
+        }
+      ]
+    },
+    {
       "title": "Tabby Spec AD",
       "caption": "Cinematic · Product · Video Generation",
       "category": "video",
@@ -94,6 +109,21 @@
       ]
     },
     {
+      "title": "Fathers Day Video",
+      "caption": "Cinematic  · Video Generation",
+      "category": "video",
+      "span": "c-12",
+      "orientation": "landscape",
+      "cover": "",
+      "media": [
+        {
+          "image": "",
+          "video": "",
+          "embed": "https://youtu.be/mn5p0L1MWhc"
+        }
+      ]
+    },
+    {
       "title": "KRATON Shoes AD",
       "caption": "World Building · Product · Video Generation",
       "category": "video",
@@ -109,17 +139,67 @@
       ]
     },
     {
-      "title": "Fathers Day Video",
-      "caption": "Cinematic  · Video Generation",
+      "title": "SquatWolf Spec AD",
+      "caption": "Cinematic · Product · Video Generation",
       "category": "video",
-      "span": "c-12",
+      "span": "c-6",
       "orientation": "landscape",
       "cover": "",
       "media": [
         {
           "image": "",
           "video": "",
-          "embed": "https://youtu.be/mn5p0L1MWhc"
+          "embed": "https://youtu.be/xqNPkuPJhIA"
+        }
+      ]
+    },
+    {
+      "title": "Dolce & Gabbana Perfume Spec AD",
+      "caption": "Cinematic  · Video Generation",
+      "category": "video",
+      "span": "c-8",
+      "orientation": "landscape",
+      "cover": "",
+      "media": [
+        {
+          "image": "",
+          "video": "",
+          "embed": "https://youtu.be/SStJ2Nre0_s"
+        },
+        {
+          "image": "",
+          "video": "",
+          "embed": ""
+        }
+      ]
+    },
+    {
+      "title": "NETFLIX Style Documentary",
+      "caption": "Documentary  · Video Generation",
+      "category": "video",
+      "span": "c-8",
+      "orientation": "landscape",
+      "cover": "",
+      "media": [
+        {
+          "image": "",
+          "video": "",
+          "embed": "https://youtu.be/HVu7HCMnIOo"
+        }
+      ]
+    },
+    {
+      "title": "Government Service Video",
+      "caption": "Animation  · Video Generation · Government",
+      "category": "video",
+      "span": "c-8",
+      "orientation": "landscape",
+      "cover": "",
+      "media": [
+        {
+          "image": "",
+          "video": "",
+          "embed": "https://youtu.be/zqzXQaCT08w"
         }
       ]
     }
