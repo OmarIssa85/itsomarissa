@@ -181,23 +181,26 @@
     background: radial-gradient(120% 90% at 15% 40%, transparent 40%, color-mix(in srgb, var(--bg) 55%, transparent) 100%);
   }
   .hero-inner { position: relative; z-index: 2; max-width: none; margin-inline: 0; padding-block: 120px 90px; }
-  .hero-intro { font-family: var(--mono); font-size: .9rem; letter-spacing: .24em; text-transform: uppercase; color: var(--clay); margin: 0; }
+  .hero-intro { font-family: var(--mono); font-size: .9rem; letter-spacing: .24em; text-transform: uppercase; color: var(--clay); margin: 0; display: inline-flex; align-items: center; gap: .85em; }
+  .hero-intro::before { content:""; flex: none; width: 9px; height: 9px; border-radius: 50%; background: var(--clay); box-shadow: 0 0 8px 1px color-mix(in srgb, var(--clay) 70%, transparent); animation: dotblink 1.6s ease-in-out infinite; }
+  @keyframes dotblink { 0%, 100% { opacity: 1; } 50% { opacity: .28; } }
+  @media (prefers-reduced-motion: reduce){ .hero-intro::before { animation: none; } }
   .hero-title { margin: 18px 0 0; min-height: 1.15em; display: flex; align-items: center; gap: .12em; }
   .hero-title .role {
     font-family: var(--sans); font-weight: 700; text-transform: uppercase; line-height: 1;
-    font-size: clamp(2rem, 3.8vw, 4.6rem); letter-spacing: .03em; color: var(--ink);
+    font-size: clamp(1.8rem, 2.9vw, 3.2rem); letter-spacing: .03em; color: var(--ink);
   }
   @supports ((-webkit-text-stroke: 1px black)) {
     .hero-title .role { color: transparent; -webkit-text-stroke: 1.4px var(--clay); paint-order: stroke fill; }
   }
-  .hero-title .caret { display: inline-block; width: 3px; height: clamp(1.9rem, 3.6vw, 3.8rem); background: var(--clay); margin-left: 6px; animation: blink 1s steps(1) infinite; }
+  .hero-title .caret { display: inline-block; width: 3px; height: clamp(1.5rem, 2.7vw, 3rem); background: var(--clay); margin-left: 6px; animation: blink 1s steps(1) infinite; }
   @keyframes blink { 50% { opacity: 0; } }
   @media (prefers-reduced-motion: reduce){ .hero-title .caret { animation: none; } }
   .hero-tagline {
     font-family: var(--sans); font-weight: 600; line-height: 1.12; letter-spacing: -.02em;
-    font-size: clamp(1.4rem, 2.2vw, 2.1rem); color: var(--ink); margin: 18px 0 0; max-width: 22ch;
+    font-size: clamp(2rem, 3.6vw, 3.8rem); color: var(--ink); margin: 18px 0 0; max-width: 22ch;
   }
-  .hero-tagline .serif { font-family: var(--serif); font-style: italic; font-weight: 500; color: var(--clay); }
+  .hero-tagline .accent { color: var(--clay); }
   .hero-sub {
     font-family: var(--serif); font-size: clamp(1.08rem, 1.6vw, 1.45rem); color: var(--ink-2);
     max-width: 34ch; margin: 20px 0 0;
@@ -733,9 +736,7 @@
     { f: "video",    label: "Videos" },
     { f: "image",    label: "Images" }
   ];
-  var filterDefs = Object.keys(present).length > 1
-    ? allDefs.filter(function(d){ return d.f === "all" || present[d.f]; })
-    : [];
+  var filterDefs = allDefs;  // always show the category tabs, even while some are still empty
   $("workFilters").innerHTML = filterDefs.map(function(d, i){
     return '<button class="filter'+(i===0?" active":"")+'" data-f="'+d.f+'">'+d.label+'</button>';
   }).join("");
