@@ -39,6 +39,9 @@ content:
             label: Typed roles (cycles through these)
             type: string
             list: true
+          - name: taglineHTML
+            label: Tagline under the role (HTML allowed)
+            type: text
           - name: subHTML
             label: Intro paragraph (HTML allowed)
             type: text

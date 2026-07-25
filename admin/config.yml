@@ -27,6 +27,7 @@ collections:
               - { name: image, label: Background image (you), widget: image, required: false }
               - { name: intro, label: "Intro line (e.g. — I am ...)", widget: string }
               - { name: roles, label: Typed roles (cycles through these), widget: list }
+              - { name: taglineHTML, label: Tagline under the role (HTML allowed), widget: text }
               - { name: subHTML, label: Intro paragraph (HTML allowed), widget: text }
               - { name: availability, label: Availability line, widget: string }
               - { name: primaryCta, label: Primary button text, widget: string }
