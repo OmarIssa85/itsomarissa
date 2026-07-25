@@ -2,7 +2,7 @@
   "brand": "itsomarissa",
   "hero": {
     "image": "images/hero-power.jpg",
-    "intro": "I am itsomarissa",
+    "intro": "I am Omar Issa",
     "roles": [
       "AI Creative",
       "Director",
@@ -53,6 +53,7 @@
       "caption": "Cinematic · Product · Video Generation",
       "category": "video",
       "span": "c-8",
+      "orientation": "landscape",
       "cover": "/images/Beatrice.jpg",
       "media": [
         {
@@ -60,14 +61,14 @@
           "video": "",
           "embed": "https://youtu.be/NCIWYkLmMlg"
         }
-      ],
-      "orientation": "landscape"
+      ]
     },
     {
       "title": "ISSA Perfume Social AD",
       "caption": "World Building · Product · Video Generation",
       "category": "video",
       "span": "c-4",
+      "orientation": "portrait",
       "cover": "",
       "media": [
         {
@@ -75,14 +76,14 @@
           "video": "",
           "embed": "https://youtube.com/shorts/VNh7aW2XoPM?feature=share"
         }
-      ],
-      "orientation": "portrait"
+      ]
     },
     {
       "title": "Bose Headphones Spec AD",
       "caption": "World Building · Product · Video Generation",
       "category": "video",
       "span": "c-8",
+      "orientation": "landscape",
       "cover": "",
       "media": [
         {
@@ -90,14 +91,14 @@
           "video": "",
           "embed": "https://youtu.be/vF6HN1D6P1k"
         }
-      ],
-      "orientation": "landscape"
+      ]
     },
     {
       "title": "KRATON Shoes AD",
       "caption": "World Building · Product · Video Generation",
       "category": "video",
-      "span": "c-6",
+      "span": "c-8",
+      "orientation": "landscape",
       "cover": "",
       "media": [
         {
@@ -105,8 +106,22 @@
           "video": "",
           "embed": "https://youtu.be/alcyVqGwDaA"
         }
-      ],
-      "orientation": "landscape"
+      ]
+    },
+    {
+      "title": "Fathers Day Video",
+      "caption": "Cinematic  · Video Generation",
+      "category": "video",
+      "span": "c-12",
+      "orientation": "landscape",
+      "cover": "",
+      "media": [
+        {
+          "image": "",
+          "video": "",
+          "embed": "https://youtu.be/mn5p0L1MWhc"
+        }
+      ]
     }
   ],
   "services": [
