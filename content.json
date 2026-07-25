@@ -3,7 +3,11 @@
   "hero": {
     "image": "images/hero-power.jpg",
     "intro": "— I am itsomarissa",
-    "roles": ["AI Creative", "Director", "Visual Artist"],
+    "roles": [
+      "AI Creative",
+      "Director",
+      "Visual Artist"
+    ],
     "subHTML": "I craft films, campaigns, and imagery with generative tools — from first frame to final grade.",
     "availability": "Available for commissions — 2026",
     "primaryCta": "View the work",
@@ -49,7 +53,7 @@
       "caption": "Cinematic · Product · Video Generation",
       "category": "video",
       "span": "c-8",
-      "cover": "/images/Beatrice.png",
+      "cover": "/images/Beatrice.jpg",
       "media": [
         {
           "image": "",
