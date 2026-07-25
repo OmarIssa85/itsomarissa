@@ -52,7 +52,7 @@
       "title": "FIFA 2026 Video",
       "caption": "World Building · Film · Video Generation",
       "category": "video",
-      "span": "c-12",
+      "span": "c-6",
       "orientation": "landscape",
       "cover": "",
       "media": [
@@ -67,7 +67,7 @@
       "title": "Tabby Spec AD",
       "caption": "Cinematic · Product · Video Generation",
       "category": "video",
-      "span": "c-8",
+      "span": "c-6",
       "orientation": "landscape",
       "cover": "/images/Beatrice.jpg",
       "media": [
@@ -75,36 +75,6 @@
           "image": "",
           "video": "",
           "embed": "https://youtu.be/NCIWYkLmMlg"
-        }
-      ]
-    },
-    {
-      "title": "ISSA Perfume Social AD",
-      "caption": "World Building · Product · Video Generation",
-      "category": "video",
-      "span": "c-4",
-      "orientation": "portrait",
-      "cover": "",
-      "media": [
-        {
-          "image": "",
-          "video": "",
-          "embed": "https://youtube.com/shorts/VNh7aW2XoPM?feature=share"
-        }
-      ]
-    },
-    {
-      "title": "Bose Headphones Spec AD",
-      "caption": "World Building · Product · Video Generation",
-      "category": "video",
-      "span": "c-8",
-      "orientation": "landscape",
-      "cover": "",
-      "media": [
-        {
-          "image": "",
-          "video": "",
-          "embed": "https://youtu.be/vF6HN1D6P1k"
         }
       ]
     },
@@ -120,36 +90,6 @@
           "image": "",
           "video": "",
           "embed": "https://youtu.be/mn5p0L1MWhc"
-        }
-      ]
-    },
-    {
-      "title": "KRATON Shoes AD",
-      "caption": "World Building · Product · Video Generation",
-      "category": "video",
-      "span": "c-6",
-      "orientation": "landscape",
-      "cover": "",
-      "media": [
-        {
-          "image": "",
-          "video": "",
-          "embed": "https://youtu.be/alcyVqGwDaA"
-        }
-      ]
-    },
-    {
-      "title": "SquatWolf Spec AD",
-      "caption": "Cinematic · Product · Video Generation",
-      "category": "video",
-      "span": "c-6",
-      "orientation": "landscape",
-      "cover": "",
-      "media": [
-        {
-          "image": "",
-          "video": "",
-          "embed": "https://youtu.be/xqNPkuPJhIA"
         }
       ]
     },
@@ -174,17 +114,32 @@
       ]
     },
     {
-      "title": "NETFLIX Style Documentary",
-      "caption": "Documentary  · Video Generation",
+      "title": "Bose Headphones Spec AD",
+      "caption": "World Building · Product · Video Generation",
       "category": "video",
-      "span": "c-8",
+      "span": "c-4",
       "orientation": "landscape",
       "cover": "",
       "media": [
         {
           "image": "",
           "video": "",
-          "embed": "https://youtu.be/HVu7HCMnIOo"
+          "embed": "https://youtu.be/vF6HN1D6P1k"
+        }
+      ]
+    },
+    {
+      "title": "KRATON Shoes AD",
+      "caption": "World Building · Product · Video Generation",
+      "category": "video",
+      "span": "c-4",
+      "orientation": "landscape",
+      "cover": "",
+      "media": [
+        {
+          "image": "",
+          "video": "",
+          "embed": "https://youtu.be/alcyVqGwDaA"
         }
       ]
     },
@@ -192,7 +147,7 @@
       "title": "Government Service Video",
       "caption": "Animation  · Video Generation · Government",
       "category": "video",
-      "span": "c-8",
+      "span": "c-4",
       "orientation": "landscape",
       "cover": "",
       "media": [
@@ -200,6 +155,51 @@
           "image": "",
           "video": "",
           "embed": "https://youtu.be/zqzXQaCT08w"
+        }
+      ]
+    },
+    {
+      "title": "ISSA Perfume Social AD",
+      "caption": "World Building · Product · Video Generation",
+      "category": "video",
+      "span": "c-4",
+      "orientation": "portrait",
+      "cover": "",
+      "media": [
+        {
+          "image": "",
+          "video": "",
+          "embed": "https://youtube.com/shorts/VNh7aW2XoPM?feature=share"
+        }
+      ]
+    },
+    {
+      "title": "SquatWolf Spec AD",
+      "caption": "Cinematic · Product · Video Generation",
+      "category": "video",
+      "span": "c-6",
+      "orientation": "landscape",
+      "cover": "",
+      "media": [
+        {
+          "image": "",
+          "video": "",
+          "embed": "https://youtu.be/xqNPkuPJhIA"
+        }
+      ]
+    },
+    {
+      "title": "NETFLIX Style Documentary",
+      "caption": "Documentary  · Video Generation",
+      "category": "video",
+      "span": "c-6",
+      "orientation": "landscape",
+      "cover": "",
+      "media": [
+        {
+          "image": "",
+          "video": "",
+          "embed": "https://youtu.be/HVu7HCMnIOo"
         }
       ]
     }
