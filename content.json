@@ -52,7 +52,7 @@
       "title": "FIFA 2026 Video",
       "caption": "World Building · Film · Video Generation",
       "category": "video",
-      "span": "c-6",
+      "span": "c-12",
       "orientation": "landscape",
       "cover": "",
       "media": [
@@ -67,7 +67,7 @@
       "title": "Tabby Spec AD",
       "caption": "Cinematic · Product · Video Generation",
       "category": "video",
-      "span": "c-6",
+      "span": "c-8",
       "orientation": "landscape",
       "cover": "/images/Beatrice.jpg",
       "media": [
@@ -97,7 +97,7 @@
       "title": "Bose Headphones Spec AD",
       "caption": "World Building · Product · Video Generation",
       "category": "video",
-      "span": "c-6",
+      "span": "c-8",
       "orientation": "landscape",
       "cover": "",
       "media": [
@@ -112,7 +112,7 @@
       "title": "Fathers Day Video",
       "caption": "Cinematic  · Video Generation",
       "category": "video",
-      "span": "c-6",
+      "span": "c-12",
       "orientation": "landscape",
       "cover": "",
       "media": [
@@ -127,7 +127,7 @@
       "title": "KRATON Shoes AD",
       "caption": "World Building · Product · Video Generation",
       "category": "video",
-      "span": "c-6",
+      "span": "c-8",
       "orientation": "landscape",
       "cover": "",
       "media": [
@@ -157,7 +157,7 @@
       "title": "Dolce & Gabbana Perfume Spec AD",
       "caption": "Cinematic  · Video Generation",
       "category": "video",
-      "span": "c-6",
+      "span": "c-8",
       "orientation": "landscape",
       "cover": "",
       "media": [
@@ -177,7 +177,7 @@
       "title": "NETFLIX Style Documentary",
       "caption": "Documentary  · Video Generation",
       "category": "video",
-      "span": "c-6",
+      "span": "c-8",
       "orientation": "landscape",
       "cover": "",
       "media": [
@@ -192,7 +192,7 @@
       "title": "Government Service Video",
       "caption": "Animation  · Video Generation · Government",
       "category": "video",
-      "span": "c-6",
+      "span": "c-8",
       "orientation": "landscape",
       "cover": "",
       "media": [
