@@ -723,7 +723,10 @@
   function projectMedia(p){
     var a = [];
     (p.media || []).forEach(function(m){ if(m && (m.image || m.video || m.embed)) a.push(m); });
-    (p.gallery || []).forEach(function(g){ if(g) a.push({ image: g }); });
+    (p.gallery || []).forEach(function(g){
+      var src = (typeof g === "string") ? g : (g && (g.image || g.src));
+      if(src) a.push({ image: src });
+    });
     return a;
   }
   function buildProjectCard(p, seed){
