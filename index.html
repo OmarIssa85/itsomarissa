@@ -259,6 +259,10 @@
   }
   .filter:hover { color: var(--ink); border-color: var(--ink-3); }
   .filter.active { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+  .see-more-wrap { text-align: center; margin-top: clamp(28px, 4vw, 44px); }
+  .see-more { font-family: var(--sans); font-weight: 600; font-size: .95rem; padding: 13px 32px; border-radius: 999px; border: 1px solid var(--line-2); background: var(--surface); color: var(--ink); cursor: pointer; transition: transform .25s var(--ease), border-color .25s, color .25s; }
+  .see-more:hover { border-color: var(--clay); color: var(--clay); transform: translateY(-2px); }
+  .see-more[hidden] { display: none; }
 
   .grid { display: grid; grid-template-columns: repeat(12, 1fr); gap: clamp(16px, 2vw, 26px); align-items: start; }
   .card {
@@ -444,6 +448,7 @@
     </div>
     <div class="filters reveal" data-d="1" id="workFilters"></div>
     <div class="grid" id="workGrid"></div>
+    <div class="see-more-wrap"><button class="see-more" id="seeMore" type="button" hidden>See more</button></div>
   </div>
 </section>
 
@@ -776,16 +781,37 @@
     return '<button class="filter'+(i===0?" active":"")+'" data-f="'+d.f+'">'+d.label+'</button>';
   }).join("");
   var filters = document.querySelectorAll(".filter");
+  var seeMore = $("seeMore");
+  var VIEW_LIMIT = 10, currentFilter = "all", expanded = false;
+  function applyView(){
+    var shown = 0, totalMatching = 0;
+    document.querySelectorAll("#workGrid .card").forEach(function(c){
+      var match = (currentFilter === "all" || c.dataset.tag === currentFilter);
+      if(!match){ c.classList.add("hide"); return; }
+      totalMatching++;
+      if(expanded || shown < VIEW_LIMIT){ c.classList.remove("hide"); c.classList.add("in"); shown++; }
+      else { c.classList.add("hide"); }
+    });
+    if(seeMore){
+      seeMore.hidden = totalMatching <= VIEW_LIMIT;
+      seeMore.textContent = expanded ? "See less" : "See more";
+    }
+  }
   filters.forEach(function(btn){
     btn.addEventListener("click", function(){
       filters.forEach(function(b){ b.classList.remove("active"); });
       btn.classList.add("active");
-      var f = btn.dataset.f;
-      document.querySelectorAll("#workGrid .card").forEach(function(c){
-        c.classList.toggle("hide", !(f === "all" || c.dataset.tag === f));
-      });
+      currentFilter = btn.dataset.f; expanded = false;
+      applyView();
     });
   });
+  if(seeMore){
+    seeMore.addEventListener("click", function(){
+      expanded = !expanded; applyView();
+      if(!expanded){ var w = $("work"); if(w) w.scrollIntoView({ behavior: "smooth" }); }
+    });
+  }
+  applyView();
 
   /* ---- services ---- */
   var sg = $("svcGrid");
