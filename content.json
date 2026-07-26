@@ -140,21 +140,6 @@
       ]
     },
     {
-      "title": "ISSA Perfume Social AD",
-      "caption": "World Building · Product · Video Generation",
-      "category": "video",
-      "span": "c-4",
-      "orientation": "portrait",
-      "cover": "",
-      "media": [
-        {
-          "image": "",
-          "video": "",
-          "embed": "https://youtube.com/shorts/VNh7aW2XoPM?feature=share"
-        }
-      ]
-    },
-    {
       "title": "Lamborghini Spec AD",
       "caption": "Cinematic · Product · Video Generation",
       "category": "video",
@@ -166,6 +151,21 @@
           "image": "",
           "video": "",
           "embed": "https://youtu.be/K9AEsnINT3o"
+        }
+      ]
+    },
+    {
+      "title": "ISSA Perfume Social AD",
+      "caption": "World Building · Product · Video Generation",
+      "category": "video",
+      "span": "c-4",
+      "orientation": "portrait",
+      "cover": "",
+      "media": [
+        {
+          "image": "",
+          "video": "",
+          "embed": "https://youtube.com/shorts/VNh7aW2XoPM?feature=share"
         }
       ]
     },
