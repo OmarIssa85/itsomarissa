@@ -340,6 +340,7 @@
   .about-grid { display: grid; grid-template-columns: 1fr 1.15fr; gap: clamp(30px, 5vw, 72px); align-items: center; }
   @media (max-width: 880px){ .about-grid{ grid-template-columns: 1fr; } }
   .portrait { position: relative; aspect-ratio: 4/5; border-radius: var(--radius); overflow: hidden; border: 1px solid var(--line); box-shadow: var(--shadow-lift); }
+  .portrait .art { position: absolute; inset: 0; }
   .portrait .label { position: absolute; bottom: 14px; left: 14px; font-family: var(--mono); font-size:.68rem; letter-spacing:.1em; text-transform: uppercase; color: #fff; background: rgba(0,0,0,.4); backdrop-filter: blur(4px); padding: 6px 11px; border-radius: 999px; }
   .about-body h2 { font-size: clamp(1.9rem, 4vw, 3rem); letter-spacing: -.035em; margin-bottom: 20px; }
   .about-body p { color: var(--ink-2); margin: 0 0 16px; }
