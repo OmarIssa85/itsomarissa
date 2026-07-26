@@ -220,7 +220,7 @@
     },
     {
       "title": "Barakat Socials Spec AD",
-      "caption": "Social Media · Product · Image Generation",
+      "caption": "Social Media · F&B Industry · Image Generation",
       "category": "image",
       "span": "c-4",
       "orientation": "portrait",
@@ -313,6 +313,22 @@
           "video": "",
           "embed": "https://youtube.com/shorts/QgyBU3KtE0M"
         }
+      ]
+    },
+    {
+      "title": "Flava Coffee Socials",
+      "caption": "Social Media · Coffee Industry · Image Generation",
+      "category": "image",
+      "span": "c-4",
+      "orientation": "portrait",
+      "cover": "/images/magnific_scale-to-916_swV5iBWl8e.png",
+      "media": [],
+      "gallery": [
+        "/images/magnific_scale-to-916_e8sWr09dqL.png",
+        "/images/magnific_scale-to-916_swV5iBWl8e.png",
+        "/images/magnific_scale-to-916_swV5iM2l8e.png",
+        "/images/magnific_scale-to-916_vuPX23Pa47.png",
+        "/images/magnific_scale-to-916_Xtg0SAxBfo.png"
       ]
     }
   ],
