@@ -127,6 +127,7 @@ collections:
                   - { name: youtube, label: YouTube URL, widget: string, required: false }
                   - { name: linkedin, label: LinkedIn URL, widget: string, required: false }
                   - { name: behance, label: Behance URL, widget: string, required: false }
+                  - { name: whatsapp, label: WhatsApp (number e.g. +971… or a wa.me link), widget: string, required: false }
 
           - label: Section headings
             name: sections

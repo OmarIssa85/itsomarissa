@@ -222,6 +222,9 @@ content:
               - name: behance
                 label: Behance URL
                 type: string
+              - name: whatsapp
+                label: WhatsApp (number e.g. +971… or a wa.me link)
+                type: string
 
       - name: sections
         label: Section headings
