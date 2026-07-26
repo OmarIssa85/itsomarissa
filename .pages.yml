@@ -128,6 +128,11 @@ content:
               - name: embed
                 label: or YouTube / Vimeo link
                 type: string
+          - name: gallery
+            label: Gallery images (add several at once)
+            type: image
+            list: true
+            media: images
 
       - name: services
         label: Services

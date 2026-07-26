@@ -625,7 +625,8 @@
     $("lbCap").textContent = p.caption || "";
     lb.classList.remove("lb-portrait", "lb-landscape");
     lb.classList.add(p.orientation === "portrait" ? "lb-portrait" : "lb-landscape");
-    album = (p.media && p.media.length) ? p.media.slice() : (p.cover ? [{ image: p.cover }] : []);
+    album = projectMedia(p);
+    if(!album.length && p.cover) album = [{ image: p.cover }];
     lbThumbs.innerHTML = "";
     if(album.length > 1){
       album.forEach(function(m, i){
@@ -718,11 +719,19 @@
     }
     return "";
   }
+  // Combine a project's media list + bulk gallery images into one array (skips empty rows).
+  function projectMedia(p){
+    var a = [];
+    (p.media || []).forEach(function(m){ if(m && (m.image || m.video || m.embed)) a.push(m); });
+    (p.gallery || []).forEach(function(g){ if(g) a.push({ image: g }); });
+    return a;
+  }
   function buildProjectCard(p, seed){
     var ci = catInfo(p.category);
     var isVid = p.category === "video";
-    var count = (p.media && p.media.length) || 0;
-    var cover = p.cover || (p.media && p.media[0] && p.media[0].image) || ytThumb(p) || "";
+    var items = projectMedia(p);
+    var count = items.length;
+    var cover = p.cover || (items[0] && items[0].image) || ytThumb(p) || "";
     var card = document.createElement("div");
     card.className = "card reveal " + (p.span || "c-4") + (p.orientation === "portrait" ? " tall" : "");
     card.dataset.tag = p.category;
