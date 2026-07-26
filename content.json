@@ -40,12 +40,10 @@
     "Nano Banana",
     "GPT 2",
     "Higgsfield",
+    "Magnific",
     "ElevenLabs",
     "CapCut",
-    "Adobe Creative Suite",
-    "Luma",
-    "Pika",
-    "After Effects"
+    "Adobe Creative Suite"
   ],
   "projects": [
     {
@@ -157,6 +155,21 @@
       ]
     },
     {
+      "title": "Lamborghini Spec AD",
+      "caption": "Cinematic · Product · Video Generation",
+      "category": "video",
+      "span": "c-12",
+      "orientation": "landscape",
+      "cover": "",
+      "media": [
+        {
+          "image": "",
+          "video": "",
+          "embed": "https://youtu.be/K9AEsnINT3o"
+        }
+      ]
+    },
+    {
       "title": "SquatWolf Spec AD",
       "caption": "Cinematic · Product · Video Generation",
       "category": "video",
@@ -228,7 +241,7 @@
       "title": "Hoover Ad",
       "caption": "Cinematic · Product · Video Generation",
       "category": "video",
-      "span": "c-6",
+      "span": "c-8",
       "orientation": "landscape",
       "cover": "",
       "media": [
@@ -377,25 +390,10 @@
       ]
     },
     {
-      "title": "Lamborghini Spec AD",
-      "caption": "Cinematic · Product · Video Generation",
-      "category": "video",
-      "span": "c-12",
-      "orientation": "landscape",
-      "cover": "",
-      "media": [
-        {
-          "image": "",
-          "video": "",
-          "embed": "https://youtu.be/K9AEsnINT3o"
-        }
-      ]
-    },
-    {
       "title": "Ajmal Perfume Spec AD",
       "caption": "Product · Video Generation",
       "category": "video",
-      "span": "c-6",
+      "span": "c-4",
       "orientation": "portrait",
       "cover": "",
       "media": [
@@ -425,7 +423,7 @@
       "title": "Hanayen Abaya Spec Campaign",
       "caption": "Social Media · E-Commerce · Fashion Industry",
       "category": "campaign",
-      "span": "c-6",
+      "span": "c-4",
       "orientation": "portrait",
       "cover": "/images/hanayen-1.jpg",
       "media": [
@@ -464,7 +462,7 @@
       "title": "Celcius Socials",
       "caption": "Social Media · F&B Industry · Image Generation",
       "category": "image",
-      "span": "c-6",
+      "span": "c-4",
       "orientation": "portrait",
       "cover": "/images/celcius-1.jpg",
       "media": [],
@@ -481,7 +479,7 @@
       "title": "Fashion Dresses",
       "caption": "Social Media · Fashion Industry · Image Generation",
       "category": "image",
-      "span": "c-6",
+      "span": "c-4",
       "orientation": "portrait",
       "cover": "/images/fashion-dresses-1.jpg",
       "media": [],
@@ -508,7 +506,7 @@
       "title": "Joe & The Juice Spec Socials",
       "caption": "Social Media · F&B Industry · Image Generation",
       "category": "image",
-      "span": "c-6",
+      "span": "c-4",
       "orientation": "portrait",
       "cover": "/images/joe-juice-1.jpg",
       "media": [],
