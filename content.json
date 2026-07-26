@@ -292,6 +292,21 @@
           "embed": "https://youtube.com/shorts/QgyBU3KtE0M"
         }
       ]
+    },
+    {
+      "title": "Barakat Socials Spec AD",
+      "caption": "Social Media · Product · Image Generation",
+      "category": "image",
+      "span": "c-4",
+      "orientation": "portrait",
+      "cover": "",
+      "media": [
+        {
+          "image": "",
+          "video": "",
+          "embed": ""
+        }
+      ]
     }
   ],
   "services": [
