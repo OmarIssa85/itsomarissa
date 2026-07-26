@@ -362,21 +362,6 @@
       ]
     },
     {
-      "title": "Lamborghini Spec AD",
-      "caption": "Cinematic · Product · Video Generation",
-      "category": "video",
-      "span": "c-12",
-      "orientation": "landscape",
-      "cover": "",
-      "media": [
-        {
-          "image": "",
-          "video": "",
-          "embed": "https://youtu.be/K9AEsnINT3o"
-        }
-      ]
-    },
-    {
       "title": "Perfume Spec AD",
       "caption": "Cinematic · Product · Video Generation",
       "category": "video",
@@ -388,6 +373,21 @@
           "image": "",
           "video": "",
           "embed": "https://youtu.be/qkbRrc0gRhE"
+        }
+      ]
+    },
+    {
+      "title": "Lamborghini Spec AD",
+      "caption": "Cinematic · Product · Video Generation",
+      "category": "video",
+      "span": "c-12",
+      "orientation": "landscape",
+      "cover": "",
+      "media": [
+        {
+          "image": "",
+          "video": "",
+          "embed": "https://youtu.be/K9AEsnINT3o"
         }
       ]
     },
