@@ -80,10 +80,10 @@ collections:
                   - { name: video, label: Video file, widget: file, required: false, media_folder: "/videos", public_folder: "/videos" }
                   - { name: embed, label: or YouTube / Vimeo link, widget: string, required: false }
               - name: gallery
-                label: Gallery images (add several; drag to reorder)
-                widget: list
+                label: Gallery images (select several; drag to reorder)
+                widget: image
                 required: false
-                field: { name: image, label: Image, widget: image }
+                multiple: true
 
           - label: Services
             name: services
