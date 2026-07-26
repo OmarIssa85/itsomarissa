@@ -228,7 +228,7 @@
       "title": "Hoover Ad",
       "caption": "Cinematic · Product · Video Generation",
       "category": "video",
-      "span": "c-4",
+      "span": "c-6",
       "orientation": "landscape",
       "cover": "",
       "media": [
@@ -273,7 +273,7 @@
       "title": "NETFLIX Style Documentary",
       "caption": "Documentary  · Video Generation",
       "category": "video",
-      "span": "c-6",
+      "span": "c-4",
       "orientation": "landscape",
       "cover": "",
       "media": [
@@ -305,7 +305,7 @@
       "title": "Silabela Marketing Content",
       "caption": "Social Media · E-Commerce · Beauty Industry · Image generation",
       "category": "image",
-      "span": "c-6",
+      "span": "c-4",
       "orientation": "portrait",
       "cover": "/images/creation_2112622528 copy.jpg",
       "media": [],
@@ -325,7 +325,7 @@
       "title": "Louis Vuitton Spec AD",
       "caption": "Social Media · Fashion Industry · Image Generation",
       "category": "image",
-      "span": "c-6",
+      "span": "c-4",
       "orientation": "portrait",
       "cover": "/images/freepik_image-type-modelled-editorial-subject-action-summer-conservatory-bench-model-rests-bag-beside-her-fingertips-on-handle-braid-while-she-looks-down-softly-shot-type-medium-camera-angle-slig_0033 copy.jpg",
       "media": [],
@@ -350,7 +350,7 @@
       "title": "AI Sketch Video",
       "caption": "Cinematic · World Building · Video Generation",
       "category": "video",
-      "span": "c-4",
+      "span": "c-6",
       "orientation": "landscape",
       "cover": "",
       "media": [
@@ -358,6 +358,21 @@
           "image": "",
           "video": "",
           "embed": "https://youtu.be/655dtec0Fvg"
+        }
+      ]
+    },
+    {
+      "title": "Lamborghini Spec AD",
+      "caption": "Cinematic · Product · Video Generation",
+      "category": "video",
+      "span": "c-12",
+      "orientation": "landscape",
+      "cover": "",
+      "media": [
+        {
+          "image": "",
+          "video": "",
+          "embed": "https://youtu.be/K9AEsnINT3o"
         }
       ]
     },
@@ -380,7 +395,7 @@
       "title": "Ajmal Perfume Spec AD",
       "caption": "Product · Video Generation",
       "category": "video",
-      "span": "c-4",
+      "span": "c-6",
       "orientation": "portrait",
       "cover": "",
       "media": [
@@ -388,21 +403,6 @@
           "image": "",
           "video": "",
           "embed": "https://youtube.com/shorts/HnzPhcEHNBs"
-        }
-      ]
-    },
-    {
-      "title": "Lamborghini Spec AD",
-      "caption": "Cinematic · Product · Video Generation",
-      "category": "video",
-      "span": "c-8",
-      "orientation": "landscape",
-      "cover": "",
-      "media": [
-        {
-          "image": "",
-          "video": "",
-          "embed": "https://youtu.be/K9AEsnINT3o"
         }
       ]
     },
