@@ -219,6 +219,28 @@
       ]
     },
     {
+      "title": "Barakat Socials Spec AD",
+      "caption": "Social Media · Product · Image Generation",
+      "category": "image",
+      "span": "c-4",
+      "orientation": "portrait",
+      "cover": "/images/magnific__style-3-infographic-sticker-overlay-prompt-2-flatl__26840.png",
+      "media": [],
+      "gallery": [
+        "/images/magnific__explosive-product-hero-shot-barakat-mixed-berry-sm__26838.png",
+        "/images/magnific__style-3-infographic-sticker-overlay-prompt-2-flatl__26840.png",
+        "/images/magnific__style-3-infographic-sticker-overlay-prompt-2-flatl__26841.png",
+        "/images/magnific_berry-benefits-breakdown-_3000219889.png",
+        "/images/magnific_image-type-hero-product-c_3000240583.png",
+        "/images/magnific_image-type-hero-product-e_2999815055.png",
+        "/images/magnific_image-type-hero-product-e_2999830479.png",
+        "/images/magnific_image-type-hyperrealistic_2999820090.png",
+        "/images/magnific_image-type-hyperrealistic_2999822273.png",
+        "/images/magnific_market-stall-freshness-ba_3000236161.png",
+        "/images/magnific_pov-street-attitude-barak_3000219290.png"
+      ]
+    },
+    {
       "title": "AI Sketch Video",
       "caption": "Cinematic · World Building · Video Generation",
       "category": "video",
@@ -291,31 +313,6 @@
           "video": "",
           "embed": "https://youtube.com/shorts/QgyBU3KtE0M"
         }
-      ]
-    },
-    {
-      "title": "Barakat Socials Spec AD",
-      "caption": "Social Media · Product · Image Generation",
-      "category": "image",
-      "span": "c-4",
-      "orientation": "portrait",
-      "cover": "/images/magnific__style-3-infographic-sticker-overlay-prompt-2-flatl__26840.png",
-      "media": [],
-      "gallery": [
-        "/images/magnific__explosive-product-hero-shot-barakat-mixed-berry-sm__26838.png",
-        "/images/magnific__style-3-infographic-sticker-overlay-prompt-2-flatl__26840.png",
-        "/images/magnific__studio-still-life-overhead-flatlay-birdseye-view-b__26839.png",
-        "/images/magnific__style-3-infographic-sticker-overlay-prompt-2-flatl__26841.png",
-        "/images/magnific_berry-benefits-breakdown-_3000219889.png",
-        "/images/magnific_image-type-editorial-ugc-_2999818028.png",
-        "/images/magnific_image-type-hero-product-c_3000240583.png",
-        "/images/magnific_image-type-hero-product-e_2999815055.png",
-        "/images/magnific_image-type-hero-product-e_2999830479.png",
-        "/images/magnific_image-type-hyperrealistic_2999820090.png",
-        "/images/magnific_image-type-hyperrealistic_2999822273.png",
-        "/images/magnific_market-stall-freshness-ba_3000236161.png",
-        "/images/magnific_pov-street-attitude-barak_3000219290.png",
-        "/images/magnific_prompt-1-overhead-flat-la_3000216556.png"
       ]
     }
   ],
