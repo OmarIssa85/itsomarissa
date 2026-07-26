@@ -79,7 +79,11 @@ collections:
                   - { name: image, label: Image, widget: image, required: false }
                   - { name: video, label: Video file, widget: file, required: false, media_folder: "/videos", public_folder: "/videos" }
                   - { name: embed, label: or YouTube / Vimeo link, widget: string, required: false }
-              - { name: gallery, label: "Gallery images (select or drag several at once)", widget: image, required: false, multiple: true }
+              - name: gallery
+                label: Gallery images (select several at once)
+                widget: image
+                required: false
+                multiple: true
 
           - label: Services
             name: services
