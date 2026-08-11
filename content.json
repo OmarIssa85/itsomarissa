@@ -517,6 +517,21 @@
         "/images/joe-juice-4.jpg",
         "/images/joe-juice-5.jpg"
       ]
+    },
+    {
+      "title": "One Sky | AI Music Film",
+      "caption": "AI Music Film · Video Generation",
+      "category": "video",
+      "span": "c-8",
+      "orientation": "landscape",
+      "cover": "/images/hf_20260803_160357_6bb2a710-497c-490c-bb24-c081365cb999.png",
+      "media": [
+        {
+          "image": "",
+          "video": "",
+          "embed": "https://youtu.be/5d6hXWjI3eE"
+        }
+      ]
     }
   ],
   "services": [
