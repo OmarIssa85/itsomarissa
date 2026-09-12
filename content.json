@@ -47,8 +47,8 @@
   ],
   "projects": [
     {
-      "title": "Dolce & Gabbana Perfume Spec AD",
-      "caption": "Cinematic  · Video Generation",
+      "title": "FRIO Sparkling Water Spec AD",
+      "caption": "Digital Media · F&B Industry · Video Generation",
       "category": "video",
       "span": "c-6",
       "orientation": "landscape",
@@ -57,12 +57,22 @@
         {
           "image": "",
           "video": "",
-          "embed": "https://youtu.be/SStJ2Nre0_s"
-        },
+          "embed": "https://youtu.be/ILKokddGAzE"
+        }
+      ]
+    },
+    {
+      "title": "Emirates Airlines Spec AD",
+      "caption": "Digital · Aviation industry · Video Generation",
+      "category": "video",
+      "span": "c-6",
+      "orientation": "landscape",
+      "cover": "/images/hf_20260909_132035_8ee0de93-ea86-474b-90cd-4563a9b25977.png",
+      "media": [
         {
           "image": "",
           "video": "",
-          "embed": ""
+          "embed": "https://youtu.be/gCtbGJzg8z8"
         }
       ]
     },
@@ -125,10 +135,55 @@
       ]
     },
     {
+      "title": "AI Video for a Property Listing",
+      "caption": "Digital · Real Estate · Video Generation",
+      "category": "video",
+      "span": "c-6",
+      "orientation": "landscape",
+      "cover": "/images/youtube-thumbnail-RE.png",
+      "media": [
+        {
+          "image": "",
+          "video": "",
+          "embed": "https://youtu.be/WLxC07I2g7M"
+        }
+      ]
+    },
+    {
+      "title": "SquatWolf Spec AD",
+      "caption": "Cinematic · Product · Video Generation",
+      "category": "video",
+      "span": "c-6",
+      "orientation": "landscape",
+      "cover": "",
+      "media": [
+        {
+          "image": "",
+          "video": "",
+          "embed": "https://youtu.be/xqNPkuPJhIA"
+        }
+      ]
+    },
+    {
+      "title": "Hoover Ad",
+      "caption": "Cinematic · Product · Video Generation",
+      "category": "video",
+      "span": "c-8",
+      "orientation": "landscape",
+      "cover": "",
+      "media": [
+        {
+          "image": "",
+          "video": "",
+          "embed": "https://youtu.be/nTVvmtEJvR0"
+        }
+      ]
+    },
+    {
       "title": "Lamborghini Spec AD",
       "caption": "Cinematic · Product · Video Generation",
       "category": "video",
-      "span": "c-12",
+      "span": "c-6",
       "orientation": "landscape",
       "cover": "",
       "media": [
@@ -151,21 +206,6 @@
           "image": "",
           "video": "",
           "embed": "https://youtube.com/shorts/VNh7aW2XoPM?feature=share"
-        }
-      ]
-    },
-    {
-      "title": "SquatWolf Spec AD",
-      "caption": "Cinematic · Product · Video Generation",
-      "category": "video",
-      "span": "c-8",
-      "orientation": "landscape",
-      "cover": "",
-      "media": [
-        {
-          "image": "",
-          "video": "",
-          "embed": "https://youtu.be/xqNPkuPJhIA"
         }
       ]
     },
@@ -205,21 +245,6 @@
         "/images/freepik_ugc-style-3-photorealisti_2772344904 copy.jpg",
         "/images/freepik_ugc-style-5-photorealisti_2772345464 copy.jpg",
         "/images/freepik_ugc-style-market-morning-_2772630705 copy.jpg"
-      ]
-    },
-    {
-      "title": "Hoover Ad",
-      "caption": "Cinematic · Product · Video Generation",
-      "category": "video",
-      "span": "c-8",
-      "orientation": "landscape",
-      "cover": "",
-      "media": [
-        {
-          "image": "",
-          "video": "",
-          "embed": "https://youtu.be/nTVvmtEJvR0"
-        }
       ]
     },
     {
@@ -327,21 +352,6 @@
           "image": "",
           "video": "",
           "embed": "https://youtube.com/shorts/HnzPhcEHNBs"
-        }
-      ]
-    },
-    {
-      "title": "AI Video for a Property Listing",
-      "caption": "Digital · Real Estate · Video Generation",
-      "category": "video",
-      "span": "c-6",
-      "orientation": "landscape",
-      "cover": "/images/youtube-thumbnail-RE.png",
-      "media": [
-        {
-          "image": "",
-          "video": "",
-          "embed": "https://youtu.be/WLxC07I2g7M"
         }
       ]
     },
@@ -468,36 +478,6 @@
         "/images/fashion-dresses-14.jpg",
         "/images/fashion-dresses-15.jpg",
         "/images/fashion-dresses-16.jpg"
-      ]
-    },
-    {
-      "title": "Emirates Airlines Spec AD",
-      "caption": "Digital · Aviation industry · Video Generation",
-      "category": "video",
-      "span": "c-6",
-      "orientation": "landscape",
-      "cover": "/images/hf_20260909_132035_8ee0de93-ea86-474b-90cd-4563a9b25977.png",
-      "media": [
-        {
-          "image": "",
-          "video": "",
-          "embed": "https://youtu.be/gCtbGJzg8z8"
-        }
-      ]
-    },
-    {
-      "title": "FRIO Sparkling Water Spec AD",
-      "caption": "Digital Media · F&B Industry · Video Generation",
-      "category": "video",
-      "span": "c-6",
-      "orientation": "landscape",
-      "cover": "",
-      "media": [
-        {
-          "image": "",
-          "video": "",
-          "embed": "https://youtu.be/ILKokddGAzE"
-        }
       ]
     }
   ],
