@@ -268,21 +268,6 @@
       ]
     },
     {
-      "title": "KRATON Shoes AD",
-      "caption": "World Building · Product · Video Generation",
-      "category": "video",
-      "span": "c-4",
-      "orientation": "landscape",
-      "cover": "",
-      "media": [
-        {
-          "image": "",
-          "video": "",
-          "embed": "https://youtu.be/alcyVqGwDaA"
-        }
-      ]
-    },
-    {
       "title": "Government Service Video",
       "caption": "Animation  · Video Generation · Government",
       "category": "video",
@@ -319,7 +304,13 @@
       "span": "c-4",
       "orientation": "portrait",
       "cover": "/images/magnific_use-the-exact-uploaded-fr_2934696846 (1) 2 copy.jpg",
-      "media": [],
+      "media": [
+        {
+          "image": "",
+          "video": "",
+          "embed": "https://youtu.be/HVu7HCMnIOo"
+        }
+      ],
       "gallery": [
         "/images/magnific_ultrarealistic-premium-sp_2934728439 (1) 2 copy.jpg",
         "/images/magnific_use-the-exact-frio-sparkl_2934896239 2 copy.jpg",
@@ -327,26 +318,6 @@
         "/images/magnific_use-the-exact-frio-sparkl_2934941134 2 copy.jpg",
         "/images/magnific_use-the-exact-frio-sparkl_2934942299 2 copy.jpg",
         "/images/magnific_use-the-exact-uploaded-fr_2934756295 (1) copy.jpg"
-      ]
-    },
-    {
-      "title": "Silabela Marketing Content",
-      "caption": "Social Media · E-Commerce · Beauty Industry · Image generation",
-      "category": "image",
-      "span": "c-4",
-      "orientation": "portrait",
-      "cover": "/images/silabela-1.jpg",
-      "media": [],
-      "gallery": [
-        "/images/silabela-1.jpg",
-        "/images/silabela-2.jpg",
-        "/images/silabela-3.jpg",
-        "/images/silabela-4.jpg",
-        "/images/silabela-5.jpg",
-        "/images/silabela-6.jpg",
-        "/images/silabela-7.jpg",
-        "/images/silabela-8.jpg",
-        "/images/silabela-9.jpg"
       ]
     },
     {
@@ -375,36 +346,6 @@
       ]
     },
     {
-      "title": "AI Sketch Video",
-      "caption": "Cinematic · World Building · Video Generation",
-      "category": "video",
-      "span": "c-6",
-      "orientation": "landscape",
-      "cover": "",
-      "media": [
-        {
-          "image": "",
-          "video": "",
-          "embed": "https://youtu.be/655dtec0Fvg"
-        }
-      ]
-    },
-    {
-      "title": "Perfume Spec AD",
-      "caption": "Cinematic · Product · Video Generation",
-      "category": "video",
-      "span": "c-6",
-      "orientation": "landscape",
-      "cover": "",
-      "media": [
-        {
-          "image": "",
-          "video": "",
-          "embed": "https://youtu.be/qkbRrc0gRhE"
-        }
-      ]
-    },
-    {
       "title": "Ajmal Perfume Spec AD",
       "caption": "Product · Video Generation",
       "category": "video",
@@ -416,6 +357,21 @@
           "image": "",
           "video": "",
           "embed": "https://youtube.com/shorts/HnzPhcEHNBs"
+        }
+      ]
+    },
+    {
+      "title": "AI Video for a Property Listing",
+      "caption": "Digital · Real Estate · Video Generation",
+      "category": "video",
+      "span": "c-6",
+      "orientation": "landscape",
+      "cover": "/images/youtube-thumbnail-RE.png",
+      "media": [
+        {
+          "image": "",
+          "video": "",
+          "embed": "https://youtu.be/WLxC07I2g7M"
         }
       ]
     },
@@ -435,12 +391,35 @@
       ]
     },
     {
-      "title": "Hanayen Spec Campaign",
-      "caption": "Social Media · E-Commerce · Fashion Industry",
-      "category": "campaign",
+      "title": "Celcius Socials",
+      "caption": "Social Media · F&B Industry · Image Generation",
+      "category": "image",
       "span": "c-4",
       "orientation": "portrait",
-      "cover": "/images/hanayen-1.jpg",
+      "cover": "/images/celcius-1.jpg",
+      "media": [
+        {
+          "image": "",
+          "video": "",
+          "embed": "https://youtube.com/shorts/QgyBU3KtE0M"
+        }
+      ],
+      "gallery": [
+        "/images/celcius-2.jpg",
+        "/images/celcius-1.jpg",
+        "/images/celcius-3.jpg",
+        "/images/celcius-4.jpg",
+        "/images/celcius-5.jpg",
+        "/images/celcius-6.jpg"
+      ]
+    },
+    {
+      "title": "Fashion Dresses",
+      "caption": "Social Media · Fashion Industry · Image Generation",
+      "category": "image",
+      "span": "c-4",
+      "orientation": "portrait",
+      "cover": "/images/fashion-dresses-1.jpg",
       "media": [
         {
           "image": "",
@@ -458,46 +437,6 @@
           "embed": ""
         }
       ],
-      "gallery": [
-        "/images/hanayen-2.jpg",
-        "/images/hanayen-1.jpg",
-        "/images/hanayen-3.jpg",
-        "/images/hanayen-4.jpg",
-        "/images/hanayen-5.jpg",
-        "/images/hanayen-6.jpg",
-        "/images/hanayen-7.jpg",
-        "/images/hanayen-8.jpg",
-        "/images/hanayen-9.jpg",
-        "/images/hanayen-10.jpg",
-        "/images/hanayen-11.jpg",
-        "/images/hanayen-12.jpg"
-      ]
-    },
-    {
-      "title": "Celcius Socials",
-      "caption": "Social Media · F&B Industry · Image Generation",
-      "category": "image",
-      "span": "c-4",
-      "orientation": "portrait",
-      "cover": "/images/celcius-1.jpg",
-      "media": [],
-      "gallery": [
-        "/images/celcius-2.jpg",
-        "/images/celcius-1.jpg",
-        "/images/celcius-3.jpg",
-        "/images/celcius-4.jpg",
-        "/images/celcius-5.jpg",
-        "/images/celcius-6.jpg"
-      ]
-    },
-    {
-      "title": "Fashion Dresses",
-      "caption": "Social Media · Fashion Industry · Image Generation",
-      "category": "image",
-      "span": "c-4",
-      "orientation": "portrait",
-      "cover": "/images/fashion-dresses-1.jpg",
-      "media": [],
       "gallery": [
         "/images/fashion-dresses-2.jpg",
         "/images/fashion-dresses-1.jpg",
@@ -530,7 +469,65 @@
         "/images/joe-juice-2.jpg",
         "/images/joe-juice-3.jpg",
         "/images/joe-juice-4.jpg",
-        "/images/joe-juice-5.jpg"
+        "/images/joe-juice-5.jpg",
+        "/images/celcius-6.jpg"
+      ]
+    },
+    {
+      "title": "Fashion Dresses",
+      "caption": "Social Media · Fashion Industry · Image Generation",
+      "category": "image",
+      "span": "c-4",
+      "orientation": "portrait",
+      "cover": "/images/fashion-dresses-1.jpg",
+      "media": [],
+      "gallery": [
+        "/images/fashion-dresses-2.jpg",
+        "/images/fashion-dresses-1.jpg",
+        "/images/fashion-dresses-3.jpg",
+        "/images/fashion-dresses-4.jpg",
+        "/images/fashion-dresses-5.jpg",
+        "/images/fashion-dresses-6.jpg",
+        "/images/fashion-dresses-7.jpg",
+        "/images/fashion-dresses-8.jpg",
+        "/images/fashion-dresses-9.jpg",
+        "/images/fashion-dresses-10.jpg",
+        "/images/fashion-dresses-11.jpg",
+        "/images/fashion-dresses-12.jpg",
+        "/images/fashion-dresses-13.jpg",
+        "/images/fashion-dresses-14.jpg",
+        "/images/fashion-dresses-15.jpg",
+        "/images/fashion-dresses-16.jpg"
+      ]
+    },
+    {
+      "title": "Emirates Airlines Spec AD",
+      "caption": "Digital · Aviation industry · Video Generation",
+      "category": "video",
+      "span": "c-6",
+      "orientation": "landscape",
+      "cover": "/images/hf_20260909_132035_8ee0de93-ea86-474b-90cd-4563a9b25977.png",
+      "media": [
+        {
+          "image": "",
+          "video": "",
+          "embed": "https://youtu.be/gCtbGJzg8z8"
+        }
+      ]
+    },
+    {
+      "title": "FRIO Sparkling Water Spec AD",
+      "caption": "Digital Media · F&B Industry · Video Generation",
+      "category": "video",
+      "span": "c-6",
+      "orientation": "landscape",
+      "cover": "",
+      "media": [
+        {
+          "image": "",
+          "video": "",
+          "embed": "https://youtu.be/ILKokddGAzE"
+        }
       ]
     }
   ],
