@@ -480,49 +480,6 @@
       "span": "c-4",
       "orientation": "portrait",
       "cover": "/images/fashion-dresses-1.jpg",
-      "media": [
-        {
-          "image": "",
-          "video": "/videos/hanayen-video-1.mp4",
-          "embed": ""
-        },
-        {
-          "image": "",
-          "video": "/videos/hanayen-video-2.mp4",
-          "embed": ""
-        },
-        {
-          "image": "",
-          "video": "/videos/hanayen-video-3.mp4",
-          "embed": ""
-        }
-      ],
-      "gallery": [
-        "/images/fashion-dresses-2.jpg",
-        "/images/fashion-dresses-1.jpg",
-        "/images/fashion-dresses-3.jpg",
-        "/images/fashion-dresses-4.jpg",
-        "/images/fashion-dresses-5.jpg",
-        "/images/fashion-dresses-6.jpg",
-        "/images/fashion-dresses-7.jpg",
-        "/images/fashion-dresses-8.jpg",
-        "/images/fashion-dresses-9.jpg",
-        "/images/fashion-dresses-10.jpg",
-        "/images/fashion-dresses-11.jpg",
-        "/images/fashion-dresses-12.jpg",
-        "/images/fashion-dresses-13.jpg",
-        "/images/fashion-dresses-14.jpg",
-        "/images/fashion-dresses-15.jpg",
-        "/images/fashion-dresses-16.jpg"
-      ]
-    },
-    {
-      "title": "Fashion Dresses",
-      "caption": "Social Media · Fashion Industry · Image Generation",
-      "category": "image",
-      "span": "c-4",
-      "orientation": "portrait",
-      "cover": "/images/fashion-dresses-1.jpg",
       "media": [],
       "gallery": [
         "/images/fashion-dresses-2.jpg",
