@@ -47,21 +47,6 @@
   ],
   "projects": [
     {
-      "title": "FIFA 2026 Video",
-      "caption": "World Building · Film · Video Generation",
-      "category": "video",
-      "span": "c-6",
-      "orientation": "landscape",
-      "cover": "",
-      "media": [
-        {
-          "image": "",
-          "video": "",
-          "embed": "https://youtu.be/0WKxM-slSPo"
-        }
-      ]
-    },
-    {
       "title": "Dolce & Gabbana Perfume Spec AD",
       "caption": "Cinematic  · Video Generation",
       "category": "video",
@@ -181,21 +166,6 @@
           "image": "",
           "video": "",
           "embed": "https://youtu.be/xqNPkuPJhIA"
-        }
-      ]
-    },
-    {
-      "title": "Tabby Spec AD",
-      "caption": "Cinematic · Product · Video Generation",
-      "category": "video",
-      "span": "c-6",
-      "orientation": "landscape",
-      "cover": "/images/Beatrice.jpg",
-      "media": [
-        {
-          "image": "",
-          "video": "",
-          "embed": "https://youtu.be/NCIWYkLmMlg"
         }
       ]
     },
