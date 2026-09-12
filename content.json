@@ -479,6 +479,66 @@
         "/images/fashion-dresses-15.jpg",
         "/images/fashion-dresses-16.jpg"
       ]
+    },
+    {
+      "title": "Adidas Padel Racket Spec AD",
+      "caption": "Social Media · Fitness Industry · Video Generation",
+      "category": "video",
+      "span": "c-6",
+      "orientation": "portrait",
+      "cover": "",
+      "media": [
+        {
+          "image": "",
+          "video": "",
+          "embed": "https://youtube.com/shorts/xB1YtDv_yTE?feature=share"
+        }
+      ]
+    },
+    {
+      "title": "On Running Shoes Spec AD",
+      "caption": "Digital Media · Fashion Industry · Video Generation",
+      "category": "video",
+      "span": "c-6",
+      "orientation": "landscape",
+      "cover": "",
+      "media": [
+        {
+          "image": "",
+          "video": "",
+          "embed": "https://youtu.be/ZPZZHkcKnkI"
+        }
+      ]
+    },
+    {
+      "title": "XXL Drink AI Social AD",
+      "caption": "Social Media · F&B Industry · Video Generation",
+      "category": "video",
+      "span": "c-6",
+      "orientation": "portrait",
+      "cover": "",
+      "media": [
+        {
+          "image": "",
+          "video": "",
+          "embed": "https://youtube.com/shorts/YWLsisEeM3w"
+        }
+      ]
+    },
+    {
+      "title": "ADAM Pre-Workout Social AD",
+      "caption": "Social Media · Fitness Industry · Video Generation",
+      "category": "video",
+      "span": "c-6",
+      "orientation": "landscape",
+      "cover": "",
+      "media": [
+        {
+          "image": "",
+          "video": "",
+          "embed": "https://youtu.be/Xydut7bbol4"
+        }
+      ]
     }
   ],
   "services": [
