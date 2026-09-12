@@ -198,7 +198,7 @@
       "title": "XXL Drink AI Social AD",
       "caption": "Social Media · F&B Industry · Video Generation",
       "category": "video",
-      "span": "c-6",
+      "span": "c-4",
       "orientation": "portrait",
       "cover": "",
       "media": [
@@ -213,7 +213,7 @@
       "title": "Adidas Padel Racket Spec AD",
       "caption": "Social Media · Fitness Industry · Video Generation",
       "category": "video",
-      "span": "c-6",
+      "span": "c-4",
       "orientation": "portrait",
       "cover": "",
       "media": [
@@ -371,7 +371,7 @@
       "title": "Government Service Video",
       "caption": "Animation  · Video Generation · Government",
       "category": "video",
-      "span": "c-4",
+      "span": "c-6",
       "orientation": "landscape",
       "cover": "",
       "media": [
@@ -386,7 +386,7 @@
       "title": "NETFLIX Style Documentary",
       "caption": "Documentary  · Video Generation",
       "category": "video",
-      "span": "c-4",
+      "span": "c-6",
       "orientation": "landscape",
       "cover": "",
       "media": [
