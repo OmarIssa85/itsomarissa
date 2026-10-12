@@ -34,6 +34,7 @@
     }
   ],
   "tools": [
+    "Seedance",
     "Kling",
     "Veo",
     "Midjourney",
@@ -180,7 +181,7 @@
       ]
     },
     {
-      "title": "Lamborghini Spec AD",
+      "title": "Ferarri Spec AD",
       "caption": "Cinematic · Product · Video Generation",
       "category": "video",
       "span": "c-6",
