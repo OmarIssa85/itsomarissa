@@ -515,6 +515,21 @@
         "/images/fashion-dresses-15.jpg",
         "/images/fashion-dresses-16.jpg"
       ]
+    },
+    {
+      "title": "Gucci Lipstick",
+      "caption": "Social Media · Beauty Industry · Video Generation",
+      "category": "video",
+      "span": "c-4",
+      "orientation": "portrait",
+      "cover": "",
+      "media": [
+        {
+          "image": "",
+          "video": "",
+          "embed": "https://youtube.com/shorts/p1eP4cK7TXY?feature=share"
+        }
+      ]
     }
   ],
   "services": [
