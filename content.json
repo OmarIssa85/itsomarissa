@@ -98,6 +98,21 @@
       ]
     },
     {
+      "title": "Gucci Lipstick",
+      "caption": "Social Media · Beauty Industry · Video Generation",
+      "category": "video",
+      "span": "c-4",
+      "orientation": "portrait",
+      "cover": "",
+      "media": [
+        {
+          "image": "",
+          "video": "",
+          "embed": "https://youtube.com/shorts/p1eP4cK7TXY?feature=share"
+        }
+      ]
+    },
+    {
       "title": "Barakat Socials Spec AD",
       "caption": "Social Media · F&B Industry · Image Generation",
       "category": "image",
@@ -117,22 +132,6 @@
         "/images/barakat-9.jpg",
         "/images/barakat-10.jpg",
         "/images/barakat-11.jpg"
-      ]
-    },
-    {
-      "title": "Flava Coffee Socials",
-      "caption": "Social Media · Coffee Industry · Image Generation",
-      "category": "image",
-      "span": "c-4",
-      "orientation": "portrait",
-      "cover": "/images/magnific_scale-to-916_swV5iBWl8e.png",
-      "media": [],
-      "gallery": [
-        "/images/magnific_scale-to-916_e8sWr09dqL.png",
-        "/images/magnific_scale-to-916_swV5iBWl8e.png",
-        "/images/magnific_scale-to-916_swV5iM2l8e.png",
-        "/images/magnific_scale-to-916_vuPX23Pa47.png",
-        "/images/magnific_scale-to-916_Xtg0SAxBfo.png"
       ]
     },
     {
@@ -514,21 +513,6 @@
         "/images/fashion-dresses-14.jpg",
         "/images/fashion-dresses-15.jpg",
         "/images/fashion-dresses-16.jpg"
-      ]
-    },
-    {
-      "title": "Gucci Lipstick",
-      "caption": "Social Media · Beauty Industry · Video Generation",
-      "category": "video",
-      "span": "c-4",
-      "orientation": "portrait",
-      "cover": "",
-      "media": [
-        {
-          "image": "",
-          "video": "",
-          "embed": "https://youtube.com/shorts/p1eP4cK7TXY?feature=share"
-        }
       ]
     }
   ],
